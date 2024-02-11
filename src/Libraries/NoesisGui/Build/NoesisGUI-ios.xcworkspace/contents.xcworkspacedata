@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Src/Projects/NoesisApp/ios/NoesisApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/XamlPlayer/ios/Gui.XamlPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Integration/ios/Samples.Integration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/HelloWorld/ios/Samples.HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Buttons/ios/Samples.Buttons.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Login/ios/Samples.Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/QuestLog/ios/Samples.QuestLog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Scoreboard/ios/Samples.Scoreboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/DataBinding/ios/Samples.DataBinding.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/ApplicationTutorial/ios/Samples.ApplicationTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Touch/ios/Samples.Touch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Commands/ios/Samples.Commands.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/UserControl/ios/Samples.UserControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/CustomControl/ios/Samples.CustomControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/BlendTutorial/ios/Samples.BlendTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Menu3D/ios/Samples.Menu3D.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Localization/ios/Samples.Localization.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Inventory/ios/Samples.Inventory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/TicTacToe/ios/Samples.TicTacToe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Gallery/ios/Samples.Gallery.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Rive/ios/Samples.Rive.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/BackgroundBlur/ios/Samples.BackgroundBlur.xcodeproj">
+   </FileRef>
+</Workspace>

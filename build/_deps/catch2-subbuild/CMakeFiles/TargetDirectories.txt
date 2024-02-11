@@ -1,0 +1,3 @@
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir

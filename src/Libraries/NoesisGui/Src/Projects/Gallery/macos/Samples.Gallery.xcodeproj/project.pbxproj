@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        B5680F2D93634C1B82305C53 /* Aero Matics Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 49C36C63F2044BE780A5C659 /* Aero Matics Regular.ttf */; };
+        2722F83B81F04199A461E7B7 /* Animation.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 295EB23E7F894D1396C5D1E9 /* Animation.xaml */; };
+        BAE034E8624845B48C8D2761 /* App.xaml in Sources */ = {isa = PBXBuildFile; fileRef = E253D430C2CD4A248FB8A1FE /* App.xaml */; };
+        F3A745C8782A4CE09AF45DF6 /* Blending.xaml in Sources */ = {isa = PBXBuildFile; fileRef = B1AF3285BC6F4CB295F89186 /* Blending.xaml */; };
+        AA8D375B2616447795245E8E /* Brushes.xaml in Sources */ = {isa = PBXBuildFile; fileRef = D8C5FA6D01904D188F1889C8 /* Brushes.xaml */; };
+        26B8D8956FD5463A9A278D7A /* Button.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 6A7920B3D5824609BED8694E /* Button.xaml */; };
+        00267E1C75E54D18A921B3EA /* Caladea-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = A88C347CCA694F9B88398F57 /* Caladea-Regular.ttf */; };
+        F4DBA52CBCB54A698B6E8515 /* Canvas.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 4115A0F6694C4CDAAE7CA2F4 /* Canvas.xaml */; };
+        68691D8C92DD4BF49B372FA2 /* CheckBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 5D433DBD51B5454CA2A0103E /* CheckBox.xaml */; };
+        A51776BCE91B45DA9DA5BDC1 /* ComboBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 842553B0D90F4BFC8A9B8409 /* ComboBox.xaml */; };
+        53B07D3FEB194BCB93298626 /* ContextMenu.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 22B6BC2EBBA446E29BDF64F9 /* ContextMenu.xaml */; };
+        3DA11FDF8C00451A8E1FD0FE /* CourierPrime-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 1256C95C6A414A5BB7D9219A /* CourierPrime-Regular.ttf */; };
+        83F5A41860924B3890619A96 /* DockPanel.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 901186F1EE7D472A8F076888 /* DockPanel.xaml */; };
+        4021E6FC6F744869BE92D1E1 /* Effects.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 42EED683DDCB47DD80101044 /* Effects.xaml */; };
+        57B93DD599EC45439087467E /* Expander.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A303A32494FFC86813D89 /* Expander.xaml */; };
+        F2A1A47B54FC48B798DAE4C6 /* Grid.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D30A4B69849C3B60F9A7E /* Grid.xaml */; };
+        B45A1E43E648496CB1AFF7D1 /* GroupBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = F9481AB795C1462D8E1BC89B /* GroupBox.xaml */; };
+        4039E5B7EA564104BA27275C /* Hyperlink.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 8E3D3B50CB8F475A8DF304FD /* Hyperlink.xaml */; };
+        B064A8B0E6BD4456B45FB9B3 /* Image.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 7EC25323F3024EF3BF4BECF9 /* Image.xaml */; };
+        36D659AEBC504659943BF629 /* ItemsControl.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 70CB5F9A5A5F40D79EAB3D63 /* ItemsControl.xaml */; };
+        14293ED20C3E4FAC815DCC24 /* ListBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 3817058BE62B433EBA1C45DC /* ListBox.xaml */; };
+        0F9780EF293F43DDA7F1BA7D /* ListView.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 3DA371D93A4241CCA988625B /* ListView.xaml */; };
+        2E518FAE38754441A3EB07B4 /* MainWindow.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 8E0970CF481345BF8F82EC53 /* MainWindow.xaml */; };
+        80F69D33E48A469490CD3969 /* Menu.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 0AB443D96C784C75A4EAC28A /* Menu.xaml */; };
+        61A84D8F50F3447A93F765F6 /* Muli-Bold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CACD5008BDE0400CB4536852 /* Muli-Bold.ttf */; };
+        3350DDED26DC4D73A33A812D /* Muli-Italic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = EE2E12FB42F1472FB93F1315 /* Muli-Italic.ttf */; };
+        AE70086640C54FE6AECA53EB /* Muli-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 9D66CACA17B94BD1B43571A0 /* Muli-Regular.ttf */; };
+        9373E6CD28CE4D4C869376FB /* Nature.png in Sources */ = {isa = PBXBuildFile; fileRef = 328D2CA2CA90493192F0F45B /* Nature.png */; };
+        727F06B06117404FA532C98A /* PasswordBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 1EED4B1D741E4052B3FCA7DB /* PasswordBox.xaml */; };
+        AFF962F8D8FE435481D11628 /* ProgressBar.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 620D56444CAE45A8B6A0974E /* ProgressBar.xaml */; };
+        13F8A806F19C4C1191D204CE /* RadioButton.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 093B0ACC4FB346DDA7772DD0 /* RadioButton.xaml */; };
+        0D21B9C069EC4FC3933098F3 /* RepeatButton.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 68977BCB9BD5412198E6FF5C /* RepeatButton.xaml */; };
+        51C973399D3943FD8C9CF853 /* Resources.xaml in Sources */ = {isa = PBXBuildFile; fileRef = D2553A79AE2E4E659DD375EF /* Resources.xaml */; };
+        4C11751C02AA4C609C5B2BA9 /* ScrollViewer.xaml in Sources */ = {isa = PBXBuildFile; fileRef = D91621BEB8C34E83BF4ABD9A /* ScrollViewer.xaml */; };
+        1A16AC64EA154390A11461EB /* Slider.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 79A46CBE3FA04F06B0CC8810 /* Slider.xaml */; };
+        E9B4BE3FE8984752AB2ED5FC /* StackPanel.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FE5C2AA249BDB6E887A1 /* StackPanel.xaml */; };
+        3136F504EA274AABB05F8399 /* StatusBar.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 5DE74C4501924742B56BF604 /* StatusBar.xaml */; };
+        3D8958F9268A4EB1B12968DC /* TabControl.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 81B2AA45B9E6447C8FA0AFD5 /* TabControl.xaml */; };
+        112376A2BEF04DE298D222A6 /* TextBlock.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 9E778FEDA57D472EA64C0F43 /* TextBlock.xaml */; };
+        5B974B36891C46D2818EA0BD /* TextBox.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 479A26F4C782494D9E4EBAE3 /* TextBox.xaml */; };
+        38C5C6678AC744038E51CFBB /* ToggleButton.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 5B68C4BA53C946D48AE8124C /* ToggleButton.xaml */; };
+        025F2175DF4E4BA5AE044FDE /* ToolBar.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 45BEC917525F48179CFE80A5 /* ToolBar.xaml */; };
+        B68C83BF0FE94159B1226085 /* ToolTip.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4EDDE6FDF455B814D972C /* ToolTip.xaml */; };
+        CCD1AD3AE77E43ECA53535F0 /* TreeView.xaml in Sources */ = {isa = PBXBuildFile; fileRef = C2B42432047C44BB957C184F /* TreeView.xaml */; };
+        C17D5394C3184D9ABA159374 /* UniformGrid.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 108A173B4FCA4BD49F3BC205 /* UniformGrid.xaml */; };
+        FDE8E1E8BF544F18AE305C0B /* WidgetIcons.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 495CC7F9090146D5BBE07F56 /* WidgetIcons.ttf */; };
+        06C318A2CE544BD8A98CC872 /* WrapPanel.xaml in Sources */ = {isa = PBXBuildFile; fileRef = 22363FF7B4F54793B2CBA992 /* WrapPanel.xaml */; };
+        258D04BC3C104278BAB1FAC7 /* file.png in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2085F5824E5C9BEAAB39 /* file.png */; };
+        09DA8A03B09A43C888A9882C /* floppy-disk.png in Sources */ = {isa = PBXBuildFile; fileRef = 74A72770EB2E4DBA91CD4322 /* floppy-disk.png */; };
+        58B809B6E40B4796B1929E7A /* folder-closed.png in Sources */ = {isa = PBXBuildFile; fileRef = 16C9126B3E6C428CAF9AFA17 /* folder-closed.png */; };
+        B3E31ED9723E444B80C96B08 /* folder-open.png in Sources */ = {isa = PBXBuildFile; fileRef = EF2B9CF91FA9463184C2666D /* folder-open.png */; };
+        7793B897B6AA4FC2915F8C04 /* recycling-bin.png in Sources */ = {isa = PBXBuildFile; fileRef = 828B7467153C4F1C8E8F93CF /* recycling-bin.png */; };
+        55B3D9C8C8884EE38B9EFA0F /* search.png in Sources */ = {isa = PBXBuildFile; fileRef = 07328527F301496E9024ADF0 /* search.png */; };
+        348DF8D53727423183B6566B /* App.xaml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB243B11F69443196E29CA9 /* App.xaml.cpp */; };
+        988CADA0AB464A1AAAB288E3 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBBEEF84B14575A3DD8ADD /* Main.cpp */; };
+        2448E34857A04740961637C8 /* MainWindow.xaml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5D69E270FD34EFB9032F595 /* MainWindow.xaml.cpp */; };
+        B32A7BB1B42F417DA41A5FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D70BC0DA0C43A8AF325038 /* Assets.xcassets */; };
+        40A959BA16B742B28F4BAA84 /* Noesis.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E520B86C3184858BAA21799 /* Noesis.dylib */; };
+        8F65357C80694DDC8E5F9124 /* NoesisApp.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1208E97DB7C94EE6845DFA9D /* NoesisApp.dylib */; };
+        07AB1FA091544AB5A88BB0A1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5CA056FF5F439D9C522BF2 /* AppKit.framework */; };
+        8CBED27912954C778E2D60C3 /* Noesis.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E520B86C3184858BAA21799 /* Noesis.dylib */; };
+        326530164D69463B89886D5A /* NoesisApp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1208E97DB7C94EE6845DFA9D /* NoesisApp.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        EFD815D0B4184960A4DAA319 /* Samples.Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Samples.Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        9D5CA056FF5F439D9C522BF2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = SDKROOT; };
+        2E520B86C3184858BAA21799 /* Noesis.dylib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "Noesis.dylib"; path = "../../../../Bin/macos/Noesis.dylib"; sourceTree = SOURCE_ROOT; };
+        1208E97DB7C94EE6845DFA9D /* NoesisApp.dylib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "NoesisApp.dylib"; path = "../../../../Bin/macos/NoesisApp.dylib"; sourceTree = SOURCE_ROOT; };
+        FDB243B11F69443196E29CA9 /* App.xaml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "App.xaml.cpp"; path = "../../../Packages/Samples/Gallery/Src/App.xaml.cpp"; sourceTree = SOURCE_ROOT; };
+        1B85CE1FD2204EC38F3C8143 /* App.xaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "App.xaml.h"; path = "../../../Packages/Samples/Gallery/Src/App.xaml.h"; sourceTree = SOURCE_ROOT; };
+        5EBBBEEF84B14575A3DD8ADD /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Main.cpp"; path = "../../../Packages/Samples/Gallery/Src/Main.cpp"; sourceTree = SOURCE_ROOT; };
+        C5D69E270FD34EFB9032F595 /* MainWindow.xaml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "MainWindow.xaml.cpp"; path = "../../../Packages/Samples/Gallery/Src/MainWindow.xaml.cpp"; sourceTree = SOURCE_ROOT; };
+        D72707C7E2D44188893D6BD7 /* MainWindow.xaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MainWindow.xaml.h"; path = "../../../Packages/Samples/Gallery/Src/MainWindow.xaml.h"; sourceTree = SOURCE_ROOT; };
+        49C36C63F2044BE780A5C659 /* Aero Matics Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aero Matics Regular.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/Aero Matics Regular.ttf"; sourceTree = SOURCE_ROOT; };
+        295EB23E7F894D1396C5D1E9 /* Animation.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Animation.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Animation.xaml"; sourceTree = SOURCE_ROOT; };
+        E253D430C2CD4A248FB8A1FE /* App.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "App.xaml"; path = "../../../Packages/Samples/Gallery/Data/App.xaml"; sourceTree = SOURCE_ROOT; };
+        B1AF3285BC6F4CB295F89186 /* Blending.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blending.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Blending.xaml"; sourceTree = SOURCE_ROOT; };
+        D8C5FA6D01904D188F1889C8 /* Brushes.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Brushes.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Brushes.xaml"; sourceTree = SOURCE_ROOT; };
+        6A7920B3D5824609BED8694E /* Button.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Button.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Button.xaml"; sourceTree = SOURCE_ROOT; };
+        A88C347CCA694F9B88398F57 /* Caladea-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Caladea-Regular.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/Caladea-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+        4115A0F6694C4CDAAE7CA2F4 /* Canvas.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Canvas.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Canvas.xaml"; sourceTree = SOURCE_ROOT; };
+        5D433DBD51B5454CA2A0103E /* CheckBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CheckBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/CheckBox.xaml"; sourceTree = SOURCE_ROOT; };
+        842553B0D90F4BFC8A9B8409 /* ComboBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ComboBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ComboBox.xaml"; sourceTree = SOURCE_ROOT; };
+        22B6BC2EBBA446E29BDF64F9 /* ContextMenu.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ContextMenu.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ContextMenu.xaml"; sourceTree = SOURCE_ROOT; };
+        1256C95C6A414A5BB7D9219A /* CourierPrime-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CourierPrime-Regular.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/CourierPrime-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+        901186F1EE7D472A8F076888 /* DockPanel.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DockPanel.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/DockPanel.xaml"; sourceTree = SOURCE_ROOT; };
+        42EED683DDCB47DD80101044 /* Effects.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Effects.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Effects.xaml"; sourceTree = SOURCE_ROOT; };
+        4B4A303A32494FFC86813D89 /* Expander.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Expander.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Expander.xaml"; sourceTree = SOURCE_ROOT; };
+        8E3D30A4B69849C3B60F9A7E /* Grid.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Grid.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Grid.xaml"; sourceTree = SOURCE_ROOT; };
+        F9481AB795C1462D8E1BC89B /* GroupBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GroupBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/GroupBox.xaml"; sourceTree = SOURCE_ROOT; };
+        8E3D3B50CB8F475A8DF304FD /* Hyperlink.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Hyperlink.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Hyperlink.xaml"; sourceTree = SOURCE_ROOT; };
+        7EC25323F3024EF3BF4BECF9 /* Image.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Image.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Image.xaml"; sourceTree = SOURCE_ROOT; };
+        70CB5F9A5A5F40D79EAB3D63 /* ItemsControl.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ItemsControl.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ItemsControl.xaml"; sourceTree = SOURCE_ROOT; };
+        3817058BE62B433EBA1C45DC /* ListBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ListBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ListBox.xaml"; sourceTree = SOURCE_ROOT; };
+        3DA371D93A4241CCA988625B /* ListView.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ListView.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ListView.xaml"; sourceTree = SOURCE_ROOT; };
+        8E0970CF481345BF8F82EC53 /* MainWindow.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MainWindow.xaml"; path = "../../../Packages/Samples/Gallery/Data/MainWindow.xaml"; sourceTree = SOURCE_ROOT; };
+        0AB443D96C784C75A4EAC28A /* Menu.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Menu.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Menu.xaml"; sourceTree = SOURCE_ROOT; };
+        CACD5008BDE0400CB4536852 /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Muli-Bold.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/Muli-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+        EE2E12FB42F1472FB93F1315 /* Muli-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Muli-Italic.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/Muli-Italic.ttf"; sourceTree = SOURCE_ROOT; };
+        9D66CACA17B94BD1B43571A0 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Muli-Regular.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/Muli-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+        328D2CA2CA90493192F0F45B /* Nature.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nature.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/Nature.png"; sourceTree = SOURCE_ROOT; };
+        1EED4B1D741E4052B3FCA7DB /* PasswordBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PasswordBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/PasswordBox.xaml"; sourceTree = SOURCE_ROOT; };
+        620D56444CAE45A8B6A0974E /* ProgressBar.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProgressBar.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ProgressBar.xaml"; sourceTree = SOURCE_ROOT; };
+        093B0ACC4FB346DDA7772DD0 /* RadioButton.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RadioButton.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/RadioButton.xaml"; sourceTree = SOURCE_ROOT; };
+        68977BCB9BD5412198E6FF5C /* RepeatButton.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RepeatButton.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/RepeatButton.xaml"; sourceTree = SOURCE_ROOT; };
+        D2553A79AE2E4E659DD375EF /* Resources.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Resources.xaml"; path = "../../../Packages/Samples/Gallery/Data/Resources.xaml"; sourceTree = SOURCE_ROOT; };
+        D91621BEB8C34E83BF4ABD9A /* ScrollViewer.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ScrollViewer.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ScrollViewer.xaml"; sourceTree = SOURCE_ROOT; };
+        79A46CBE3FA04F06B0CC8810 /* Slider.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Slider.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/Slider.xaml"; sourceTree = SOURCE_ROOT; };
+        5DA3FE5C2AA249BDB6E887A1 /* StackPanel.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "StackPanel.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/StackPanel.xaml"; sourceTree = SOURCE_ROOT; };
+        5DE74C4501924742B56BF604 /* StatusBar.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "StatusBar.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/StatusBar.xaml"; sourceTree = SOURCE_ROOT; };
+        81B2AA45B9E6447C8FA0AFD5 /* TabControl.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TabControl.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/TabControl.xaml"; sourceTree = SOURCE_ROOT; };
+        9E778FEDA57D472EA64C0F43 /* TextBlock.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TextBlock.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/TextBlock.xaml"; sourceTree = SOURCE_ROOT; };
+        479A26F4C782494D9E4EBAE3 /* TextBox.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TextBox.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/TextBox.xaml"; sourceTree = SOURCE_ROOT; };
+        5B68C4BA53C946D48AE8124C /* ToggleButton.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ToggleButton.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ToggleButton.xaml"; sourceTree = SOURCE_ROOT; };
+        45BEC917525F48179CFE80A5 /* ToolBar.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ToolBar.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ToolBar.xaml"; sourceTree = SOURCE_ROOT; };
+        6ED4EDDE6FDF455B814D972C /* ToolTip.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ToolTip.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/ToolTip.xaml"; sourceTree = SOURCE_ROOT; };
+        C2B42432047C44BB957C184F /* TreeView.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TreeView.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/TreeView.xaml"; sourceTree = SOURCE_ROOT; };
+        108A173B4FCA4BD49F3BC205 /* UniformGrid.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UniformGrid.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/UniformGrid.xaml"; sourceTree = SOURCE_ROOT; };
+        495CC7F9090146D5BBE07F56 /* WidgetIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WidgetIcons.ttf"; path = "../../../Packages/Samples/Gallery/Data/Samples/Fonts/WidgetIcons.ttf"; sourceTree = SOURCE_ROOT; };
+        22363FF7B4F54793B2CBA992 /* WrapPanel.xaml */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WrapPanel.xaml"; path = "../../../Packages/Samples/Gallery/Data/Samples/WrapPanel.xaml"; sourceTree = SOURCE_ROOT; };
+        5A5B2085F5824E5C9BEAAB39 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "file.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/file.png"; sourceTree = SOURCE_ROOT; };
+        74A72770EB2E4DBA91CD4322 /* floppy-disk.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "floppy-disk.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/floppy-disk.png"; sourceTree = SOURCE_ROOT; };
+        16C9126B3E6C428CAF9AFA17 /* folder-closed.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "folder-closed.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/folder-closed.png"; sourceTree = SOURCE_ROOT; };
+        EF2B9CF91FA9463184C2666D /* folder-open.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "folder-open.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/folder-open.png"; sourceTree = SOURCE_ROOT; };
+        828B7467153C4F1C8E8F93CF /* recycling-bin.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "recycling-bin.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/recycling-bin.png"; sourceTree = SOURCE_ROOT; };
+        07328527F301496E9024ADF0 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "search.png"; path = "../../../Packages/Samples/Gallery/Data/Samples/Images/search.png"; sourceTree = SOURCE_ROOT; };
+        C3A229E21EBC4B568357F764 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info.plist"; path = "info.plist"; sourceTree = SOURCE_ROOT; };
+        E0D70BC0DA0C43A8AF325038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+        10651F40E18C407686484D1B = {
+            isa = PBXGroup;
+            children = (
+                FDB243B11F69443196E29CA9,
+                1B85CE1FD2204EC38F3C8143,
+                5EBBBEEF84B14575A3DD8ADD,
+                C5D69E270FD34EFB9032F595,
+                D72707C7E2D44188893D6BD7,
+            );
+            name = Src;
+            sourceTree = "<group>";
+        };
+        C0178E6E603D4BE087722E53 = {
+            isa = PBXGroup;
+            children = (
+                49C36C63F2044BE780A5C659,
+                295EB23E7F894D1396C5D1E9,
+                E253D430C2CD4A248FB8A1FE,
+                B1AF3285BC6F4CB295F89186,
+                D8C5FA6D01904D188F1889C8,
+                6A7920B3D5824609BED8694E,
+                A88C347CCA694F9B88398F57,
+                4115A0F6694C4CDAAE7CA2F4,
+                5D433DBD51B5454CA2A0103E,
+                842553B0D90F4BFC8A9B8409,
+                22B6BC2EBBA446E29BDF64F9,
+                1256C95C6A414A5BB7D9219A,
+                901186F1EE7D472A8F076888,
+                42EED683DDCB47DD80101044,
+                4B4A303A32494FFC86813D89,
+                8E3D30A4B69849C3B60F9A7E,
+                F9481AB795C1462D8E1BC89B,
+                8E3D3B50CB8F475A8DF304FD,
+                7EC25323F3024EF3BF4BECF9,
+                70CB5F9A5A5F40D79EAB3D63,
+                3817058BE62B433EBA1C45DC,
+                3DA371D93A4241CCA988625B,
+                8E0970CF481345BF8F82EC53,
+                0AB443D96C784C75A4EAC28A,
+                CACD5008BDE0400CB4536852,
+                EE2E12FB42F1472FB93F1315,
+                9D66CACA17B94BD1B43571A0,
+                328D2CA2CA90493192F0F45B,
+                1EED4B1D741E4052B3FCA7DB,
+                620D56444CAE45A8B6A0974E,
+                093B0ACC4FB346DDA7772DD0,
+                68977BCB9BD5412198E6FF5C,
+                D2553A79AE2E4E659DD375EF,
+                D91621BEB8C34E83BF4ABD9A,
+                79A46CBE3FA04F06B0CC8810,
+                5DA3FE5C2AA249BDB6E887A1,
+                5DE74C4501924742B56BF604,
+                81B2AA45B9E6447C8FA0AFD5,
+                9E778FEDA57D472EA64C0F43,
+                479A26F4C782494D9E4EBAE3,
+                5B68C4BA53C946D48AE8124C,
+                45BEC917525F48179CFE80A5,
+                6ED4EDDE6FDF455B814D972C,
+                C2B42432047C44BB957C184F,
+                108A173B4FCA4BD49F3BC205,
+                495CC7F9090146D5BBE07F56,
+                22363FF7B4F54793B2CBA992,
+                5A5B2085F5824E5C9BEAAB39,
+                74A72770EB2E4DBA91CD4322,
+                16C9126B3E6C428CAF9AFA17,
+                EF2B9CF91FA9463184C2666D,
+                828B7467153C4F1C8E8F93CF,
+                07328527F301496E9024ADF0,
+            );
+            name = Data;
+            sourceTree = "<group>";
+        };
+        3ED3A21C7B6F49288A9BB052 = {
+            isa = PBXGroup;
+            children = (
+                C3A229E21EBC4B568357F764,
+                E0D70BC0DA0C43A8AF325038,
+            );
+            name = Resources;
+            sourceTree = "<group>";
+        };
+        CF7543817E324CE6A52B432F = {
+            isa = PBXGroup;
+            children = (
+                EFD815D0B4184960A4DAA319,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        E003BD604AA1438CA5FA3241 = {
+            isa = PBXGroup;
+            children = (
+                9D5CA056FF5F439D9C522BF2,
+                2E520B86C3184858BAA21799,
+                1208E97DB7C94EE6845DFA9D,
+            );
+            name = Dependencies;
+            sourceTree = "<group>";
+        };
+        DBA2FBE90D87409B9D28ED9F = {
+            isa = PBXGroup;
+            children = (
+                10651F40E18C407686484D1B,
+                C0178E6E603D4BE087722E53,
+                3ED3A21C7B6F49288A9BB052,
+                CF7543817E324CE6A52B432F,
+                E003BD604AA1438CA5FA3241,
+                1ACFC2C70E904F84A6AAC03D,
+            );
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXSourcesBuildPhase section */
+        ECD94147446041CFAF8291B6 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                B5680F2D93634C1B82305C53,
+                2722F83B81F04199A461E7B7,
+                BAE034E8624845B48C8D2761,
+                F3A745C8782A4CE09AF45DF6,
+                AA8D375B2616447795245E8E,
+                26B8D8956FD5463A9A278D7A,
+                00267E1C75E54D18A921B3EA,
+                F4DBA52CBCB54A698B6E8515,
+                68691D8C92DD4BF49B372FA2,
+                A51776BCE91B45DA9DA5BDC1,
+                53B07D3FEB194BCB93298626,
+                3DA11FDF8C00451A8E1FD0FE,
+                83F5A41860924B3890619A96,
+                4021E6FC6F744869BE92D1E1,
+                57B93DD599EC45439087467E,
+                F2A1A47B54FC48B798DAE4C6,
+                B45A1E43E648496CB1AFF7D1,
+                4039E5B7EA564104BA27275C,
+                B064A8B0E6BD4456B45FB9B3,
+                36D659AEBC504659943BF629,
+                14293ED20C3E4FAC815DCC24,
+                0F9780EF293F43DDA7F1BA7D,
+                2E518FAE38754441A3EB07B4,
+                80F69D33E48A469490CD3969,
+                61A84D8F50F3447A93F765F6,
+                3350DDED26DC4D73A33A812D,
+                AE70086640C54FE6AECA53EB,
+                9373E6CD28CE4D4C869376FB,
+                727F06B06117404FA532C98A,
+                AFF962F8D8FE435481D11628,
+                13F8A806F19C4C1191D204CE,
+                0D21B9C069EC4FC3933098F3,
+                51C973399D3943FD8C9CF853,
+                4C11751C02AA4C609C5B2BA9,
+                1A16AC64EA154390A11461EB,
+                E9B4BE3FE8984752AB2ED5FC,
+                3136F504EA274AABB05F8399,
+                3D8958F9268A4EB1B12968DC,
+                112376A2BEF04DE298D222A6,
+                5B974B36891C46D2818EA0BD,
+                38C5C6678AC744038E51CFBB,
+                025F2175DF4E4BA5AE044FDE,
+                B68C83BF0FE94159B1226085,
+                CCD1AD3AE77E43ECA53535F0,
+                C17D5394C3184D9ABA159374,
+                FDE8E1E8BF544F18AE305C0B,
+                06C318A2CE544BD8A98CC872,
+                258D04BC3C104278BAB1FAC7,
+                09DA8A03B09A43C888A9882C,
+                58B809B6E40B4796B1929E7A,
+                B3E31ED9723E444B80C96B08,
+                7793B897B6AA4FC2915F8C04,
+                55B3D9C8C8884EE38B9EFA0F,
+                348DF8D53727423183B6566B,
+                988CADA0AB464A1AAAB288E3,
+                2448E34857A04740961637C8,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXBuildRule section */
+        949F81FC04704D498F050813 = {
+            isa = PBXBuildRule;
+            compilerSpec = com.apple.compilers.proxy.script;
+            filePatterns = "*.xaml *.png *.ttf";
+            fileType = pattern.proxy;
+            isEditable = 0;
+            outputFiles = (
+                "${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}.bin.h"
+            );
+            runOncePerArchitecture = 0;
+            script = "../../../Tools/Bin2h/bin2h.py \"${INPUT_FILE_PATH}\" > \"${DERIVED_SOURCES_DIR}/${INPUT_FILE_NAME}.bin.h\"";
+        };
+/* End PBXBuildRule section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        1EF2ED2DBED1434DA0532B9C = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                07AB1FA091544AB5A88BB0A1,
+                8CBED27912954C778E2D60C3,
+                326530164D69463B89886D5A,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+        1B3F197A7A7D43D7AD006992 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                B32A7BB1B42F417DA41A5FB6,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+        61773210EDC44C7ABD3A6A56 = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 10;
+            files = (
+                40A959BA16B742B28F4BAA84,
+                8F65357C80694DDC8E5F9124,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+        5A650D9E39BE3218AF253DDE = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 6FB6692DB2A14847B3E0E6FC;
+            buildPhases = (
+                ECD94147446041CFAF8291B6,
+                1EF2ED2DBED1434DA0532B9C,
+                1B3F197A7A7D43D7AD006992,
+                61773210EDC44C7ABD3A6A56,
+            );
+            buildRules = (
+                949F81FC04704D498F050813,
+            );
+            dependencies = ();
+            name = Samples.Gallery;
+            productName = Samples.Gallery;
+            productReference = EFD815D0B4184960A4DAA319;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        D76806B2546745369A262AC4 = {
+            isa = PBXProject;
+            attributes = { LastUpgradeCheck = 9999; };
+            buildConfigurationList = 7316A65DD52642CDA5C43007;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (en, Base,);
+            mainGroup = DBA2FBE90D87409B9D28ED9F;
+            productRefGroup = CF7543817E324CE6A52B432F;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (5A650D9E39BE3218AF253DDE,);
+        };
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+        99A20728F9CC4707BBB99855 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                GCC_ENABLE_CPP_EXCEPTIONS = NO;
+                GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+                GCC_ENABLE_PASCAL_STRINGS = NO;
+                GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+                GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+                GCC_THREADSAFE_STATICS = NO;
+                GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+                GCC_WARN_SHADOW = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                DEAD_CODE_STRIPPING = YES;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                WARNING_CFLAGS = "-Wall -Wdeprecated-copy";
+                COPY_PHASE_STRIP = NO;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                ENABLE_NS_ASSERTIONS = YES;
+                DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+                DEPLOYMENT_POSTPROCESSING = NO;
+                SDKROOT = macosx;
+                MACOSX_DEPLOYMENT_TARGET = 10.13;
+                HEADER_SEARCH_PATHS = (../../../../Include,../../../Packages/App/ApplicationLauncher/Include,../../../Packages/App/Display/Include,../../../Packages/App/DisplayLauncher/Include,../../../Packages/App/Interactivity/Include,../../../Packages/App/Launcher/Include,../../../Packages/App/MediaElement/Include,../../../Packages/App/Providers/Include);
+                GCC_PREPROCESSOR_DEFINITIONS = ("NS_BUILD","NS_CONFIG=Debug","NS_VERSION=3.2.2","NS_APP_FRAMEWORK","NS_LICENSE","NS_DEBUG","NS_PROFILE","NS_MINIMUM_LOG_LEVEL=1","_DEBUG","DEBUG","$(inherited)");
+                LIBRARY_SEARCH_PATHS = ();
+                OTHER_LDFLAGS = ();
+                GCC_ENABLE_CPP_RTTI = YES;
+                STRIP_STYLE = all;
+                CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../../../Bin/macos";
+                USE_HEADERMAP = NO;
+            };
+            name = Debug;
+        };
+        071EDADB020549C8BAA8245B = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_BUNDLE_IDENTIFIER = "com.noesisengine.${PRODUCT_NAME:rfc1034identifier}";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                CURRENT_PROJECT_VERSION = 3.2.2;
+                DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                GCC_INPUT_FILETYPE = "sourcecode.cpp.objcpp";
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "-";
+                INFOPLIST_FILE = info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../ @executable_path/../Frameworks/";
+            };
+            name = Debug;
+        };
+        5F4A84DEFFE44AE5920AFAE5 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                GCC_ENABLE_CPP_EXCEPTIONS = NO;
+                GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+                GCC_ENABLE_PASCAL_STRINGS = NO;
+                GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+                GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+                GCC_THREADSAFE_STATICS = NO;
+                GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+                GCC_WARN_SHADOW = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                DEAD_CODE_STRIPPING = YES;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                WARNING_CFLAGS = "-Wall -Wdeprecated-copy";
+                COPY_PHASE_STRIP = NO;
+                GCC_OPTIMIZATION_LEVEL = fast;
+                GCC_FAST_MATH = YES;
+                ENABLE_NS_ASSERTIONS = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+                DEPLOYMENT_POSTPROCESSING = YES;
+                STRIP_INSTALLED_PRODUCT = YES;
+                SDKROOT = macosx;
+                MACOSX_DEPLOYMENT_TARGET = 10.13;
+                HEADER_SEARCH_PATHS = (../../../../Include,../../../Packages/App/ApplicationLauncher/Include,../../../Packages/App/Display/Include,../../../Packages/App/DisplayLauncher/Include,../../../Packages/App/Interactivity/Include,../../../Packages/App/Launcher/Include,../../../Packages/App/MediaElement/Include,../../../Packages/App/Providers/Include);
+                GCC_PREPROCESSOR_DEFINITIONS = ("NS_BUILD","NS_CONFIG=Profile","NS_VERSION=3.2.2","NS_APP_FRAMEWORK","NS_LICENSE","NS_PROFILE","NS_MINIMUM_LOG_LEVEL=2","NDEBUG","$(inherited)");
+                LIBRARY_SEARCH_PATHS = ();
+                OTHER_LDFLAGS = ();
+                GCC_ENABLE_CPP_RTTI = YES;
+                STRIP_STYLE = all;
+                CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../../../Bin/macos";
+                USE_HEADERMAP = NO;
+            };
+            name = Profile;
+        };
+        B1F5AC5878034BE6B2BFB139 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_BUNDLE_IDENTIFIER = "com.noesisengine.${PRODUCT_NAME:rfc1034identifier}";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                CURRENT_PROJECT_VERSION = 3.2.2;
+                DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                GCC_INPUT_FILETYPE = "sourcecode.cpp.objcpp";
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "-";
+                INFOPLIST_FILE = info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../ @executable_path/../Frameworks/";
+            };
+            name = Profile;
+        };
+        C5F5903A914D42EAB8280912 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                GCC_ENABLE_CPP_EXCEPTIONS = NO;
+                GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+                GCC_ENABLE_PASCAL_STRINGS = NO;
+                GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+                GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+                GCC_THREADSAFE_STATICS = NO;
+                GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+                GCC_WARN_SHADOW = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                DEAD_CODE_STRIPPING = YES;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                WARNING_CFLAGS = "-Wall -Wdeprecated-copy";
+                COPY_PHASE_STRIP = NO;
+                GCC_OPTIMIZATION_LEVEL = fast;
+                GCC_FAST_MATH = YES;
+                OTHER_CFLAGS= "-fomit-frame-pointer";
+                ENABLE_NS_ASSERTIONS = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+                DEPLOYMENT_POSTPROCESSING = YES;
+                STRIP_INSTALLED_PRODUCT = YES;
+                SDKROOT = macosx;
+                MACOSX_DEPLOYMENT_TARGET = 10.13;
+                HEADER_SEARCH_PATHS = (../../../../Include,../../../Packages/App/ApplicationLauncher/Include,../../../Packages/App/Display/Include,../../../Packages/App/DisplayLauncher/Include,../../../Packages/App/Interactivity/Include,../../../Packages/App/Launcher/Include,../../../Packages/App/MediaElement/Include,../../../Packages/App/Providers/Include);
+                GCC_PREPROCESSOR_DEFINITIONS = ("NS_BUILD","NS_CONFIG=Release","NS_VERSION=3.2.2","NS_APP_FRAMEWORK","NS_LICENSE","NDEBUG","$(inherited)");
+                LIBRARY_SEARCH_PATHS = ();
+                OTHER_LDFLAGS = ();
+                GCC_ENABLE_CPP_RTTI = YES;
+                STRIP_STYLE = all;
+                CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../../../Bin/macos";
+                USE_HEADERMAP = NO;
+            };
+            name = Release;
+        };
+        BD713CC468514D96ABC49C81 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                PRODUCT_BUNDLE_IDENTIFIER = "com.noesisengine.${PRODUCT_NAME:rfc1034identifier}";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                CURRENT_PROJECT_VERSION = 3.2.2;
+                DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+                GCC_INPUT_FILETYPE = "sourcecode.cpp.objcpp";
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "-";
+                INFOPLIST_FILE = info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../ @executable_path/../Frameworks/";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        7316A65DD52642CDA5C43007 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (99A20728F9CC4707BBB99855,5F4A84DEFFE44AE5920AFAE5,C5F5903A914D42EAB8280912);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+
+        6FB6692DB2A14847B3E0E6FC = {
+            isa = XCConfigurationList;
+            buildConfigurations = (071EDADB020549C8BAA8245B,B1F5AC5878034BE6B2BFB139,BD713CC468514D96ABC49C81);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = D76806B2546745369A262AC4;
+}

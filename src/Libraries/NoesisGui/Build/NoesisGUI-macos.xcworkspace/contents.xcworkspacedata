@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Src/Projects/NoesisApp/macos/NoesisApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/XamlPlayer/macos/Gui.XamlPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Integration/macos/Samples.Integration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/IntegrationGLUT/macos/Samples.IntegrationGLUT.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/HelloWorld/macos/Samples.HelloWorld.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Buttons/macos/Samples.Buttons.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Login/macos/Samples.Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/QuestLog/macos/Samples.QuestLog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Scoreboard/macos/Samples.Scoreboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/DataBinding/macos/Samples.DataBinding.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/ApplicationTutorial/macos/Samples.ApplicationTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Commands/macos/Samples.Commands.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/UserControl/macos/Samples.UserControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/CustomControl/macos/Samples.CustomControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/BlendTutorial/macos/Samples.BlendTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Menu3D/macos/Samples.Menu3D.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Localization/macos/Samples.Localization.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Inventory/macos/Samples.Inventory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/TicTacToe/macos/Samples.TicTacToe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Gallery/macos/Samples.Gallery.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/CustomRender/macos/Samples.CustomRender.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/CustomAnimation/macos/Samples.CustomAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/Rive/macos/Samples.Rive.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Src/Projects/BackgroundBlur/macos/Samples.BackgroundBlur.xcodeproj">
+   </FileRef>
+</Workspace>

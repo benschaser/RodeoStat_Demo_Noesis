@@ -1,0 +1,123 @@
+#!/bin/sh
+
+metal="xcrun -sdk iphoneos metal"
+metal_ar="xcrun -sdk iphoneos metal-ar"
+metallib="xcrun -sdk iphoneos metallib"
+
+#debug_options="-gline-tables-only"
+
+build()
+{
+    $metal -std=ios-metal1.0 -arch air64 -emit-llvm -c -ffast-math -miphoneos-version-min=8.0 $debug_options $1
+    if [ "$?" -ne "0" ]; then
+        exit 1
+    fi
+}
+
+build_vertex()
+{
+    build "-o $1.air -DFNAME=$1 $2 ShaderVS.metal"
+    $metal_ar r Noesis.metal-ar $1.air
+    rm $1.air
+}
+
+build_fragment()
+{
+    build "-o $1.air -DFNAME=$1 $2 ShaderFS.metal"
+    $metal_ar r Noesis.metal-ar $1.air
+    rm $1.air
+}
+
+# Vertex shaders
+build_vertex Pos_VS
+build_vertex PosColor_VS "-DHAS_COLOR"
+build_vertex PosTex0_VS "-DHAS_UV0"
+build_vertex PosTex0Rect_VS "-DHAS_UV0 -DHAS_RECT"
+build_vertex PosTex0RectTile_VS "-DHAS_UV0 -DHAS_RECT -DHAS_TILE"
+build_vertex PosColorCoverage_VS "-DHAS_COLOR -DHAS_COVERAGE"
+build_vertex PosTex0Coverage_VS "-DHAS_UV0 -DHAS_COVERAGE"
+build_vertex PosTex0CoverageRect_VS "-DHAS_UV0 -DHAS_COVERAGE -DHAS_RECT"
+build_vertex PosTex0CoverageRectTile_VS "-DHAS_UV0 -DHAS_COVERAGE -DHAS_RECT -DHAS_TILE"
+build_vertex PosColorTex1_SDF_VS "-DHAS_COLOR -DHAS_UV1 -DSDF"
+build_vertex PosTex0Tex1_SDF_VS "-DHAS_UV0 -DHAS_UV1 -DSDF"
+build_vertex PosTex0Tex1Rect_SDF_VS "-DHAS_UV0 -DHAS_UV1 -DHAS_RECT -DSDF"
+build_vertex PosTex0Tex1RectTile_SDF_VS "-DHAS_UV0 -DHAS_UV1 -DHAS_RECT -DHAS_TILE -DSDF"
+build_vertex PosColorTex1_VS "-DHAS_COLOR -DHAS_UV1"
+build_vertex PosTex0Tex1_VS "-DHAS_UV0 -DHAS_UV1"
+build_vertex PosTex0Tex1Rect_VS "-DHAS_UV0 -DHAS_UV1 -DHAS_RECT"
+build_vertex PosTex0Tex1RectTile_VS "-DHAS_UV0 -DHAS_UV1 -DHAS_RECT -DHAS_TILE"
+build_vertex PosColorTex0Tex1_VS "-DHAS_COLOR -DHAS_UV0 -DHAS_UV1"
+build_vertex PosTex0Tex1_Downsample_VS "-DHAS_UV0 -DHAS_UV1 -DDOWNSAMPLE"
+build_vertex PosColorTex1Rect_VS "-DHAS_COLOR -DHAS_UV1 -DHAS_RECT"
+build_vertex PosColorTex0RectImagePos_VS "-DHAS_COLOR -DHAS_UV0 -DHAS_RECT -DHAS_IMAGE_POSITION"
+
+build_vertex PosColor_SRGB_VS "-DHAS_COLOR -DSRGB"
+build_vertex PosColorCoverage_SRGB_VS "-DHAS_COLOR -DHAS_COVERAGE -DSRGB"
+build_vertex PosColorTex1_SDF_SRGB_VS "-DHAS_COLOR -DHAS_UV1 -DSDF -DSRGB"
+build_vertex PosColorTex1_SRGB_VS "-DHAS_COLOR -DHAS_UV1 -DSRGB"
+build_vertex PosColorTex0Tex1_SRGB_VS "-DHAS_COLOR -DHAS_UV0 -DHAS_UV1 -DSRGB"
+build_vertex PosColorTex1Rect_SRGB_VS "-DHAS_COLOR -DHAS_UV1 -DHAS_RECT -DSRGB"
+build_vertex PosColorTex0RectImagePos_SRGB_VS "-DHAS_COLOR -DHAS_UV0 -DHAS_RECT -DHAS_IMAGE_POSITION -DSRGB"
+
+# Fragment shaders
+build_fragment RGBA_PS "-DEFFECT_RGBA"
+build_fragment Mask_PS "-DEFFECT_MASK"
+build_fragment Clear_PS "-DEFFECT_CLEAR"
+
+build_fragment Path_Solid_PS "-DEFFECT_PATH -DPAINT_SOLID"
+build_fragment Path_Linear_PS "-DEFFECT_PATH -DPAINT_LINEAR"
+build_fragment Path_Radial_PS "-DEFFECT_PATH -DPAINT_RADIAL"
+build_fragment Path_Pattern_PS "-DEFFECT_PATH -DPAINT_PATTERN"
+build_fragment Path_Pattern_Clamp_PS "-DEFFECT_PATH -DPAINT_PATTERN -DCLAMP_PATTERN"
+build_fragment Path_Pattern_Repeat_PS "-DEFFECT_PATH -DPAINT_PATTERN -DREPEAT_PATTERN"
+build_fragment Path_Pattern_MirrorU_PS "-DEFFECT_PATH -DPAINT_PATTERN -DMIRRORU_PATTERN"
+build_fragment Path_Pattern_MirrorV_PS "-DEFFECT_PATH -DPAINT_PATTERN -DMIRRORV_PATTERN"
+build_fragment Path_Pattern_Mirror_PS "-DEFFECT_PATH -DPAINT_PATTERN -DMIRROR_PATTERN"
+
+build_fragment Path_AA_Solid_PS "-DEFFECT_PATH_AA -DPAINT_SOLID"
+build_fragment Path_AA_Linear_PS "-DEFFECT_PATH_AA -DPAINT_LINEAR"
+build_fragment Path_AA_Radial_PS "-DEFFECT_PATH_AA -DPAINT_RADIAL"
+build_fragment Path_AA_Pattern_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN"
+build_fragment Path_AA_Pattern_Clamp_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN -DCLAMP_PATTERN"
+build_fragment Path_AA_Pattern_Repeat_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN -DREPEAT_PATTERN"
+build_fragment Path_AA_Pattern_MirrorU_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN -DMIRRORU_PATTERN"
+build_fragment Path_AA_Pattern_MirrorV_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN -DMIRRORV_PATTERN"
+build_fragment Path_AA_Pattern_Mirror_PS "-DEFFECT_PATH_AA -DPAINT_PATTERN -DMIRROR_PATTERN"
+
+build_fragment SDF_Solid_PS "-DEFFECT_SDF -DPAINT_SOLID"
+build_fragment SDF_Linear_PS "-DEFFECT_SDF -DPAINT_LINEAR"
+build_fragment SDF_Radial_PS "-DEFFECT_SDF -DPAINT_RADIAL"
+build_fragment SDF_Pattern_PS "-DEFFECT_SDF -DPAINT_PATTERN"
+build_fragment SDF_Pattern_Clamp_PS "-DEFFECT_SDF -DPAINT_PATTERN -DCLAMP_PATTERN"
+build_fragment SDF_Pattern_Repeat_PS "-DEFFECT_SDF -DPAINT_PATTERN -DREPEAT_PATTERN"
+build_fragment SDF_Pattern_MirrorU_PS "-DEFFECT_SDF -DPAINT_PATTERN -DMIRRORU_PATTERN"
+build_fragment SDF_Pattern_MirrorV_PS "-DEFFECT_SDF -DPAINT_PATTERN -DMIRRORV_PATTERN"
+build_fragment SDF_Pattern_Mirror_PS "-DEFFECT_SDF -DPAINT_PATTERN -DMIRROR_PATTERN"
+
+build_fragment Opacity_Solid_PS "-DEFFECT_OPACITY -DPAINT_SOLID"
+build_fragment Opacity_Linear_PS "-DEFFECT_OPACITY -DPAINT_LINEAR"
+build_fragment Opacity_Radial_PS "-DEFFECT_OPACITY -DPAINT_RADIAL"
+build_fragment Opacity_Pattern_PS "-DEFFECT_OPACITY -DPAINT_PATTERN"
+build_fragment Opacity_Pattern_Clamp_PS "-DEFFECT_OPACITY -DPAINT_PATTERN -DCLAMP_PATTERN"
+build_fragment Opacity_Pattern_Repeat_PS "-DEFFECT_OPACITY -DPAINT_PATTERN -DREPEAT_PATTERN"
+build_fragment Opacity_Pattern_MirrorU_PS "-DEFFECT_OPACITY -DPAINT_PATTERN -DMIRRORU_PATTERN"
+build_fragment Opacity_Pattern_MirrorV_PS "-DEFFECT_OPACITY -DPAINT_PATTERN -DMIRRORV_PATTERN"
+build_fragment Opacity_Pattern_Mirror_PS "-DEFFECT_OPACITY -DPAINT_PATTERN -DMIRROR_PATTERN"
+
+build_fragment Upsample_PS "-DEFFECT_UPSAMPLE"
+build_fragment Downsample_PS "-DEFFECT_DOWNSAMPLE"
+
+build_fragment Shadow_PS "-DEFFECT_SHADOW -DPAINT_SOLID"
+build_fragment Blur_PS "-DEFFECT_BLUR -DPAINT_SOLID"
+
+# Lib generation
+$metallib -o Noesis.metallib Noesis.metal-ar
+rm Noesis.metal-ar
+
+# Compress
+./Pack Noesis.metallib Noesis.z
+rm Noesis.metallib
+
+# Header generation
+./bin2h.py Noesis.z Shaders > Shaders.ios.h
+rm Noesis.z
