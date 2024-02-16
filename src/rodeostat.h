@@ -9,10 +9,10 @@ class RodeoStat {
 public:
     Control control;
     Graphics graphics;
+    std::vector<Contestant> contestants;
 
-    std::string print_hello();
+    
 private:
     Settings settings;
-    std::vector<Contestant> contestants;
 
 };

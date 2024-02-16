@@ -199,8 +199,8 @@ src/CMakeFiles/main.dir/clean:
 # Target rules for target test/CMakeFiles/tests.dir
 
 # All Build rule for target.
-test/CMakeFiles/tests.dir/all: src/CMakeFiles/rodeostat.dir/all
 test/CMakeFiles/tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
+test/CMakeFiles/tests.dir/all: src/CMakeFiles/rodeostat.dir/all
 test/CMakeFiles/tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
