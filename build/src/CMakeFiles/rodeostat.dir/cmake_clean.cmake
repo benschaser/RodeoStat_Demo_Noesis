@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rodeostat.dir/rodeostat.cpp.o"
-  "CMakeFiles/rodeostat.dir/rodeostat.cpp.o.d"
+  "CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o.d"
   "librodeostat.a"
   "librodeostat.pdb"
 )

@@ -10,9 +10,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #ifndef NS_LICENSE_NAME
-    #define NS_LICENSE_NAME ""
+    #define NS_LICENSE_NAME "RodeoStat"
 #endif
 
 #ifndef NS_LICENSE_KEY
-    #define NS_LICENSE_KEY ""
+    #define NS_LICENSE_KEY "mo4N48fDDePglc8nF/19ZzfxyamkorTdIdhDaw1wOO1DW28R"
 #endif

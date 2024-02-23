@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libapp_xaml.a CMakeFiles/app_xaml.dir/App.xaml.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libapp_xaml.a

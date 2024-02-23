@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libmainwindow_xaml.a CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libmainwindow_xaml.a

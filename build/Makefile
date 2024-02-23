@@ -130,6 +130,45 @@ rodeostat/fast:
 .PHONY : rodeostat/fast
 
 #=============================================================================
+# Target rules for targets named app_xaml
+
+# Build rule for target.
+app_xaml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_xaml
+.PHONY : app_xaml
+
+# fast build rule for target.
+app_xaml/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/app_xaml.dir/build.make src/CMakeFiles/app_xaml.dir/build
+.PHONY : app_xaml/fast
+
+#=============================================================================
+# Target rules for targets named mainwindow_xaml
+
+# Build rule for target.
+mainwindow_xaml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mainwindow_xaml
+.PHONY : mainwindow_xaml
+
+# fast build rule for target.
+mainwindow_xaml/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/build
+.PHONY : mainwindow_xaml/fast
+
+#=============================================================================
+# Target rules for targets named viewmodel
+
+# Build rule for target.
+viewmodel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 viewmodel
+.PHONY : viewmodel
+
+# fast build rule for target.
+viewmodel/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
+.PHONY : viewmodel/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -191,9 +230,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... app_xaml"
 	@echo "... main"
+	@echo "... mainwindow_xaml"
 	@echo "... rodeostat"
 	@echo "... tests"
+	@echo "... viewmodel"
 .PHONY : help
 
 

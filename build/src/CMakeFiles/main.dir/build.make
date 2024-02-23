@@ -93,6 +93,15 @@ main_EXTERNAL_OBJECTS =
 src/main: src/CMakeFiles/main.dir/main.cpp.o
 src/main: src/CMakeFiles/main.dir/build.make
 src/main: src/librodeostat.a
+src/main: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib
+src/main: src/libapp_xaml.a
+src/main: src/libmainwindow_xaml.a
+src/main: src/libviewmodel.a
+src/main: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
+src/main: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
+src/main: /opt/homebrew/lib/libsfml-network.2.6.1.dylib
+src/main: /opt/homebrew/lib/libsfml-audio.2.6.1.dylib
+src/main: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 src/main: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/Noesis.dylib
 src/main: src/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

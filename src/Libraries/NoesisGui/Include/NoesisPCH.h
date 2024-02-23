@@ -572,4 +572,21 @@
 #include <NsGui/ExponentialEase.h>
 #include <NsGui/ElasticEase.h>
 
+// App Framework
+#include <NsApp/Application.h>
+#include <NsApp/ApplicationLauncher.h>
+#include <NsApp/ApplicationLauncherApi.h>
+#include <NsApp/Display.h>
+#include <NsApp/DisplayApi.h>
+#include <NsApp/DisplayLauncher.h>
+#include <NsApp/DisplayLauncherApi.h>
+#include <NsApp/Launcher.h>
+#include <NsApp/LauncherApi.h>
+#include <NsApp/ProvidersApi.h>
+#include <NsApp/Window.h>
+#include <NsApp/EmbeddedFontProvider.h>
+#include <NsApp/EmbeddedTextureProvider.h>
+#include <NsApp/EmbeddedXamlProvider.h>
+
+
 #endif

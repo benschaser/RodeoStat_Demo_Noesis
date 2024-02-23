@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libviewmodel.a CMakeFiles/viewmodel.dir/ViewModel.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libviewmodel.a

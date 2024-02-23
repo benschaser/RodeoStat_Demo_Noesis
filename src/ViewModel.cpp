@@ -1,0 +1,65 @@
+#include "ViewModel.h"
+
+#include <NsCore/ReflectionImplement.h>
+#include <NsCore/Log.h>
+
+
+using namespace NoesisApp;
+using namespace RodeoStat;
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ViewModel::ViewModel()
+{
+    _startCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Start));
+    _settingsCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Settings));
+    _exitCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Exit));
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+const DelegateCommand* ViewModel::GetStartCommand() const
+{
+    return &_startCommand;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+const DelegateCommand* ViewModel::GetSettingsCommand() const
+{
+    return &_settingsCommand;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+const DelegateCommand* ViewModel::GetExitCommand() const
+{
+    return &_exitCommand;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+void ViewModel::Start(BaseComponent*)
+{
+    NS_LOG_INFO("Start App");
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+void ViewModel::Settings(BaseComponent*)
+{
+    NS_LOG_INFO("Change Settings");
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+void ViewModel::Exit(BaseComponent*)
+{
+    NS_LOG_INFO("Exit App");
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+NS_BEGIN_COLD_REGION
+
+NS_IMPLEMENT_REFLECTION(ViewModel)
+{
+    NsProp("StartCommand", &ViewModel::GetStartCommand);
+    NsProp("SettingsCommand", &ViewModel::GetSettingsCommand);
+    NsProp("ExitCommand", &ViewModel::GetExitCommand);
+}
+
+NS_END_COLD_REGION

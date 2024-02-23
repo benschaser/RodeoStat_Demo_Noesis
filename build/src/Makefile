@@ -131,6 +131,48 @@ rodeostat/fast:
 .PHONY : rodeostat/fast
 
 # Convenience name for target.
+src/CMakeFiles/app_xaml.dir/rule:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/app_xaml.dir/rule
+.PHONY : src/CMakeFiles/app_xaml.dir/rule
+
+# Convenience name for target.
+app_xaml: src/CMakeFiles/app_xaml.dir/rule
+.PHONY : app_xaml
+
+# fast build rule for target.
+app_xaml/fast:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app_xaml.dir/build.make src/CMakeFiles/app_xaml.dir/build
+.PHONY : app_xaml/fast
+
+# Convenience name for target.
+src/CMakeFiles/mainwindow_xaml.dir/rule:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mainwindow_xaml.dir/rule
+.PHONY : src/CMakeFiles/mainwindow_xaml.dir/rule
+
+# Convenience name for target.
+mainwindow_xaml: src/CMakeFiles/mainwindow_xaml.dir/rule
+.PHONY : mainwindow_xaml
+
+# fast build rule for target.
+mainwindow_xaml/fast:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/build
+.PHONY : mainwindow_xaml/fast
+
+# Convenience name for target.
+src/CMakeFiles/viewmodel.dir/rule:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/viewmodel.dir/rule
+.PHONY : src/CMakeFiles/viewmodel.dir/rule
+
+# Convenience name for target.
+viewmodel: src/CMakeFiles/viewmodel.dir/rule
+.PHONY : viewmodel
+
+# fast build rule for target.
+viewmodel/fast:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
+.PHONY : viewmodel/fast
+
+# Convenience name for target.
 src/CMakeFiles/main.dir/rule:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
@@ -143,6 +185,102 @@ main: src/CMakeFiles/main.dir/rule
 main/fast:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+App.xaml.o: App.xaml.cpp.o
+.PHONY : App.xaml.o
+
+# target to build an object file
+App.xaml.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app_xaml.dir/build.make src/CMakeFiles/app_xaml.dir/App.xaml.cpp.o
+.PHONY : App.xaml.cpp.o
+
+App.xaml.i: App.xaml.cpp.i
+.PHONY : App.xaml.i
+
+# target to preprocess a source file
+App.xaml.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app_xaml.dir/build.make src/CMakeFiles/app_xaml.dir/App.xaml.cpp.i
+.PHONY : App.xaml.cpp.i
+
+App.xaml.s: App.xaml.cpp.s
+.PHONY : App.xaml.s
+
+# target to generate assembly for a file
+App.xaml.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/app_xaml.dir/build.make src/CMakeFiles/app_xaml.dir/App.xaml.cpp.s
+.PHONY : App.xaml.cpp.s
+
+MainWindow.xaml.o: MainWindow.xaml.cpp.o
+.PHONY : MainWindow.xaml.o
+
+# target to build an object file
+MainWindow.xaml.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o
+.PHONY : MainWindow.xaml.cpp.o
+
+MainWindow.xaml.i: MainWindow.xaml.cpp.i
+.PHONY : MainWindow.xaml.i
+
+# target to preprocess a source file
+MainWindow.xaml.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.i
+.PHONY : MainWindow.xaml.cpp.i
+
+MainWindow.xaml.s: MainWindow.xaml.cpp.s
+.PHONY : MainWindow.xaml.s
+
+# target to generate assembly for a file
+MainWindow.xaml.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.s
+.PHONY : MainWindow.xaml.cpp.s
+
+RodeoStat/rodeostat.o: RodeoStat/rodeostat.cpp.o
+.PHONY : RodeoStat/rodeostat.o
+
+# target to build an object file
+RodeoStat/rodeostat.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o
+.PHONY : RodeoStat/rodeostat.cpp.o
+
+RodeoStat/rodeostat.i: RodeoStat/rodeostat.cpp.i
+.PHONY : RodeoStat/rodeostat.i
+
+# target to preprocess a source file
+RodeoStat/rodeostat.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.i
+.PHONY : RodeoStat/rodeostat.cpp.i
+
+RodeoStat/rodeostat.s: RodeoStat/rodeostat.cpp.s
+.PHONY : RodeoStat/rodeostat.s
+
+# target to generate assembly for a file
+RodeoStat/rodeostat.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.s
+.PHONY : RodeoStat/rodeostat.cpp.s
+
+ViewModel.o: ViewModel.cpp.o
+.PHONY : ViewModel.o
+
+# target to build an object file
+ViewModel.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o
+.PHONY : ViewModel.cpp.o
+
+ViewModel.i: ViewModel.cpp.i
+.PHONY : ViewModel.i
+
+# target to preprocess a source file
+ViewModel.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/ViewModel.cpp.i
+.PHONY : ViewModel.cpp.i
+
+ViewModel.s: ViewModel.cpp.s
+.PHONY : ViewModel.s
+
+# target to generate assembly for a file
+ViewModel.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/ViewModel.cpp.s
+.PHONY : ViewModel.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -168,30 +306,6 @@ main.cpp.s:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-rodeostat.o: rodeostat.cpp.o
-.PHONY : rodeostat.o
-
-# target to build an object file
-rodeostat.cpp.o:
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o
-.PHONY : rodeostat.cpp.o
-
-rodeostat.i: rodeostat.cpp.i
-.PHONY : rodeostat.i
-
-# target to preprocess a source file
-rodeostat.cpp.i:
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/rodeostat.cpp.i
-.PHONY : rodeostat.cpp.i
-
-rodeostat.s: rodeostat.cpp.s
-.PHONY : rodeostat.s
-
-# target to generate assembly for a file
-rodeostat.cpp.s:
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/rodeostat.cpp.s
-.PHONY : rodeostat.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,14 +314,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... app_xaml"
 	@echo "... main"
+	@echo "... mainwindow_xaml"
 	@echo "... rodeostat"
+	@echo "... viewmodel"
+	@echo "... App.xaml.o"
+	@echo "... App.xaml.i"
+	@echo "... App.xaml.s"
+	@echo "... MainWindow.xaml.o"
+	@echo "... MainWindow.xaml.i"
+	@echo "... MainWindow.xaml.s"
+	@echo "... RodeoStat/rodeostat.o"
+	@echo "... RodeoStat/rodeostat.i"
+	@echo "... RodeoStat/rodeostat.s"
+	@echo "... ViewModel.o"
+	@echo "... ViewModel.i"
+	@echo "... ViewModel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... rodeostat.o"
-	@echo "... rodeostat.i"
-	@echo "... rodeostat.s"
 .PHONY : help
 
 

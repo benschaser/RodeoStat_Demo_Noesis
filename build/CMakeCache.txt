@@ -472,6 +472,12 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/opt/homebrew/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=/opt/homebrew/share/doc/SFML
+
 //Value Computed by CMake
 rodeostat-testing_BINARY_DIR:STATIC=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build
 

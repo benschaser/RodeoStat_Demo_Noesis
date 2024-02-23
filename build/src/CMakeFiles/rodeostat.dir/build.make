@@ -69,28 +69,28 @@ include src/CMakeFiles/rodeostat.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/rodeostat.dir/flags.make
 
-src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o: src/CMakeFiles/rodeostat.dir/flags.make
-src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/rodeostat.cpp
-src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o: src/CMakeFiles/rodeostat.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o"
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o -MF CMakeFiles/rodeostat.dir/rodeostat.cpp.o.d -o CMakeFiles/rodeostat.dir/rodeostat.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/rodeostat.cpp
+src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o: src/CMakeFiles/rodeostat.dir/flags.make
+src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/rodeostat.cpp
+src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o: src/CMakeFiles/rodeostat.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o"
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o -MF CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o.d -o CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/rodeostat.cpp
 
-src/CMakeFiles/rodeostat.dir/rodeostat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rodeostat.dir/rodeostat.cpp.i"
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/rodeostat.cpp > CMakeFiles/rodeostat.dir/rodeostat.cpp.i
+src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.i"
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/rodeostat.cpp > CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.i
 
-src/CMakeFiles/rodeostat.dir/rodeostat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rodeostat.dir/rodeostat.cpp.s"
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/rodeostat.cpp -o CMakeFiles/rodeostat.dir/rodeostat.cpp.s
+src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.s"
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/rodeostat.cpp -o CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.s
 
 # Object files for target rodeostat
 rodeostat_OBJECTS = \
-"CMakeFiles/rodeostat.dir/rodeostat.cpp.o"
+"CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o"
 
 # External object files for target rodeostat
 rodeostat_EXTERNAL_OBJECTS =
 
-src/librodeostat.a: src/CMakeFiles/rodeostat.dir/rodeostat.cpp.o
+src/librodeostat.a: src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o
 src/librodeostat.a: src/CMakeFiles/rodeostat.dir/build.make
 src/librodeostat.a: src/CMakeFiles/rodeostat.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library librodeostat.a"

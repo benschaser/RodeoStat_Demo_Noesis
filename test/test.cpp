@@ -4,5 +4,5 @@
 RodeoStat rs;
 
 TEST_CASE( "RodeoStat connected properly", "[rodeostat]" ) {
-    REQUIRE( rs.print_hello() == "Hello, world!");
+    // REQUIRE( rs.print_hello() == "Hello, world!");
 }

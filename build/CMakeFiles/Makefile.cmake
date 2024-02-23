@@ -16,7 +16,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/catch2-src/CMakeLists.txt"
   "_deps/catch2-src/src/CMakeLists.txt"
   "_deps/catch2-src/src/catch2/catch_user_config.hpp.in"
+  "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/AddIconToBinary.cmake"
   "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/CMakeLists.txt"
+  "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/icons/rs.icns"
   "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/test/CMakeLists.txt"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -27,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeLanguageInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
+  "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeParseArguments.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CheckCXXCompilerFlag.cmake"
@@ -54,6 +57,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Darwin.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/UnixPaths.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:
@@ -65,6 +73,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/rs.icns"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/catch2-subbuild/CMakeLists.txt"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -76,6 +85,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/rodeostat.dir/DependInfo.cmake"
+  "src/CMakeFiles/app_xaml.dir/DependInfo.cmake"
+  "src/CMakeFiles/mainwindow_xaml.dir/DependInfo.cmake"
+  "src/CMakeFiles/viewmodel.dir/DependInfo.cmake"
   "src/CMakeFiles/main.dir/DependInfo.cmake"
   "test/CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
