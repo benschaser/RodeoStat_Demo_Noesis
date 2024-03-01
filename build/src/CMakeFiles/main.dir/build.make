@@ -97,6 +97,7 @@ src/main: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capst
 src/main: src/libapp_xaml.a
 src/main: src/libmainwindow_xaml.a
 src/main: src/libviewmodel.a
+src/main: src/librodeostat.a
 src/main: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
 src/main: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
 src/main: /opt/homebrew/lib/libsfml-network.2.6.1.dylib

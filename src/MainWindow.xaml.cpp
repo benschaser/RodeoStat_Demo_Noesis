@@ -6,7 +6,7 @@
 #include <NsCore/ReflectionImplementEmpty.h>
 
 
-using namespace RodeoStat;
+using namespace RS;
 using namespace Noesis;
 
 

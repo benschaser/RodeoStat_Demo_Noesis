@@ -231,7 +231,7 @@ src/CMakeFiles/mainwindow_xaml.dir/clean:
 # Target rules for target src/CMakeFiles/viewmodel.dir
 
 # All Build rule for target.
-src/CMakeFiles/viewmodel.dir/all:
+src/CMakeFiles/viewmodel.dir/all: src/CMakeFiles/rodeostat.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=99,100 "Built target viewmodel"
@@ -239,7 +239,7 @@ src/CMakeFiles/viewmodel.dir/all:
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/viewmodel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/viewmodel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/viewmodel.dir/rule

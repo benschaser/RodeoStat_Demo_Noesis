@@ -26,6 +26,7 @@ set_target_properties(noesisapp PROPERTIES
 find_package(SFML REQUIRED system window graphics network audio)
 target_link_libraries(rodeostat sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
 
+target_link_libraries(viewmodel rodeostat)
 
 target_link_libraries(app_xaml noesis)
 target_link_libraries(mainwindow_xaml noesis)

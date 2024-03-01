@@ -16,8 +16,8 @@ using namespace NoesisApp;
 class AppLauncher final: public ApplicationLauncher {
 private:
     void RegisterComponents() const override {
-        RegisterComponent<RodeoStat::MainWindow>();
-        RegisterComponent<RodeoStat::App>();
+        RegisterComponent<RS::MainWindow>();
+        RegisterComponent<RS::App>();
     }
 
     Noesis::Ptr<XamlProvider> GetXamlProvider() const override {

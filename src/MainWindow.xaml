@@ -9,20 +9,25 @@
         TextElement.FontFamily="#Noto Sans"
         Background="#2d2e32"
         Title="RodeoStat"
-        d:DesignWidth="1280" d:DesignHeight="720">
+        d:DesignWidth="1440" d:DesignHeight="900">
 
     <DockPanel LastChildFill="True">
         <Border BorderBrush="Gray" BorderThickness="0,0,0,1" Height="48" DockPanel.Dock="Top">
             <StackPanel x:Name="CommandPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top">
+                <Image Source="Resources/Images/RodeoStat Alpha Padded Logo.png" Height="48" Margin="8,0,8,0"/>
                 <Button Content="RodeoStat" Margin="8" Cursor="Hand"/>
             </StackPanel>
         </Border>
-        <StatusBar x:Name="StatusBar" VerticalAlignment="Center" DockPanel.Dock="Bottom" Height="24" Background="Black">
-            <Label Style="{StaticResource InfoPanelLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">USB Serial Console Disconnected</Label>
-            <Label Style="{StaticResource InfoPanelIcon}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE25B; &#xE73E;</Label>
+        <StatusBar x:Name="StatusBar" VerticalAlignment="Center" DockPanel.Dock="Bottom" Height="24" Background="Black" Padding="0">
+            <Label Style="{StaticResource StatusLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">USB Serial Console Disconnected</Label>
+            <Label Style="{StaticResource StatusIcon}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE25B; &#xE73E;</Label>
             <Separator/>
-            <Label Style="{StaticResource InfoPanelLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">Exporting 1080p video at 24fps on port 8800 </Label>
-            <Label Style="{StaticResource InfoPanelIcon}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE102; &#xE103;</Label>
+            <Label Style="{StaticResource StatusLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">Exporting 1080p video at 24fps on port 8800 </Label>
+            <Button Style="{StaticResource StatusIconBtn}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE102;</Button>
+            <Button Style="{StaticResource StatusIconBtn}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE103;</Button>
+            <Separator/>
+            <Label Style="{StaticResource StatusLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">Status</Label>
+
         </StatusBar>
         <!-- <StackPanel x:Name="InfoPanel" Orientation="Horizontal" Height="24" DockPanel.Dock="Bottom" Background="Black" VerticalAlignment="Center">
             <Label Style="{StaticResource InfoPanelLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">USB Serial Console Disconnected</Label>
@@ -40,8 +45,31 @@
         </Border>
         <Border BorderBrush="Gray" BorderThickness="1,0,0,0" DockPanel.Dock="Right">
             <StackPanel x:Name="ContestantPanel" Orientation="Vertical" Width="240" DockPanel.Dock="Right">
-                <ListView SelectionMode="Single"/>
-                <Button Content="+" Margin="8" Cursor="Hand"/>
+                <!-- <ListView SelectionMode="Single">
+
+                </ListView> -->
+                <ListView Height="200">
+                    <ListView.View>
+                      <GridView>
+                        <GridViewColumn Header="Contestant" CellTemplate="{StaticResource RefText}" />
+                        <GridViewColumn Header="Time"/>
+                      </GridView>
+                    </ListView.View>
+                    <TextBlock x:Name="Jimothy Bins" Text="9.012" Margin="5,0"/>
+                    <TextBlock x:Name="John Krasinski" Text="2.003" Margin="5,0"/>
+                    <TextBlock x:Name="Ryan Reynolds" Text="11.235" Margin="5,0" IsEnabled="False"/>
+                    <TextBlock x:Name="Michael Scott" Text="10.584" Margin="5,0"/>
+                    <TextBlock x:Name="Taylor Swift" Text="0.003" Margin="5,0"/>
+                    <TextBlock x:Name="Emily Blunt" Text="0.000" Margin="5,0"/>
+                    <TextBlock x:Name="Logan Hennen" Text="1.204" Margin="5,0" IsEnabled="False"/>
+                    <TextBlock x:Name="Josh Hennen" Text="5.234" Margin="5,0"/>
+                    <TextBlock x:Name="Grace Hennen" Text="7.937" Margin="5,0"/>
+                </ListView>
+                <StackPanel Orientation="Horizontal" Background="Gray">
+                    <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE710;" Margin="8" Cursor="Hand" Width="48"/>
+                    <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE74D;" Margin="8" Cursor="Hand" Width="48"/>
+                </StackPanel>
+                
             </StackPanel>
         </Border>
 

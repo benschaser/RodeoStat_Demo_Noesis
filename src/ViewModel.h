@@ -4,9 +4,10 @@
 #include <NsCore/ReflectionDeclare.h>
 #include <NsCore/BaseComponent.h>
 #include <NsApp/DelegateCommand.h>
+#include "rodeostat.h"
 
 
-namespace RodeoStat
+namespace RS
 {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -14,6 +15,7 @@ class ViewModel final: public Noesis::BaseComponent
 {
 public:
     ViewModel();
+    RodeoStat rs;
 
 private:
     const NoesisApp::DelegateCommand* GetStartCommand() const;
