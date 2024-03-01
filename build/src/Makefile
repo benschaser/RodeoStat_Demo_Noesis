@@ -234,6 +234,102 @@ MainWindow.xaml.cpp.s:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.s
 .PHONY : MainWindow.xaml.cpp.s
 
+RodeoStat/clock.o: RodeoStat/clock.cpp.o
+.PHONY : RodeoStat/clock.o
+
+# target to build an object file
+RodeoStat/clock.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.o
+.PHONY : RodeoStat/clock.cpp.o
+
+RodeoStat/clock.i: RodeoStat/clock.cpp.i
+.PHONY : RodeoStat/clock.i
+
+# target to preprocess a source file
+RodeoStat/clock.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.i
+.PHONY : RodeoStat/clock.cpp.i
+
+RodeoStat/clock.s: RodeoStat/clock.cpp.s
+.PHONY : RodeoStat/clock.s
+
+# target to generate assembly for a file
+RodeoStat/clock.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.s
+.PHONY : RodeoStat/clock.cpp.s
+
+RodeoStat/contestant.o: RodeoStat/contestant.cpp.o
+.PHONY : RodeoStat/contestant.o
+
+# target to build an object file
+RodeoStat/contestant.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.o
+.PHONY : RodeoStat/contestant.cpp.o
+
+RodeoStat/contestant.i: RodeoStat/contestant.cpp.i
+.PHONY : RodeoStat/contestant.i
+
+# target to preprocess a source file
+RodeoStat/contestant.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.i
+.PHONY : RodeoStat/contestant.cpp.i
+
+RodeoStat/contestant.s: RodeoStat/contestant.cpp.s
+.PHONY : RodeoStat/contestant.s
+
+# target to generate assembly for a file
+RodeoStat/contestant.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.s
+.PHONY : RodeoStat/contestant.cpp.s
+
+RodeoStat/control.o: RodeoStat/control.cpp.o
+.PHONY : RodeoStat/control.o
+
+# target to build an object file
+RodeoStat/control.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.o
+.PHONY : RodeoStat/control.cpp.o
+
+RodeoStat/control.i: RodeoStat/control.cpp.i
+.PHONY : RodeoStat/control.i
+
+# target to preprocess a source file
+RodeoStat/control.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.i
+.PHONY : RodeoStat/control.cpp.i
+
+RodeoStat/control.s: RodeoStat/control.cpp.s
+.PHONY : RodeoStat/control.s
+
+# target to generate assembly for a file
+RodeoStat/control.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.s
+.PHONY : RodeoStat/control.cpp.s
+
+RodeoStat/graphics.o: RodeoStat/graphics.cpp.o
+.PHONY : RodeoStat/graphics.o
+
+# target to build an object file
+RodeoStat/graphics.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.o
+.PHONY : RodeoStat/graphics.cpp.o
+
+RodeoStat/graphics.i: RodeoStat/graphics.cpp.i
+.PHONY : RodeoStat/graphics.i
+
+# target to preprocess a source file
+RodeoStat/graphics.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.i
+.PHONY : RodeoStat/graphics.cpp.i
+
+RodeoStat/graphics.s: RodeoStat/graphics.cpp.s
+.PHONY : RodeoStat/graphics.s
+
+# target to generate assembly for a file
+RodeoStat/graphics.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.s
+.PHONY : RodeoStat/graphics.cpp.s
+
 RodeoStat/rodeostat.o: RodeoStat/rodeostat.cpp.o
 .PHONY : RodeoStat/rodeostat.o
 
@@ -257,6 +353,30 @@ RodeoStat/rodeostat.s: RodeoStat/rodeostat.cpp.s
 RodeoStat/rodeostat.cpp.s:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.s
 .PHONY : RodeoStat/rodeostat.cpp.s
+
+RodeoStat/score.o: RodeoStat/score.cpp.o
+.PHONY : RodeoStat/score.o
+
+# target to build an object file
+RodeoStat/score.cpp.o:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o
+.PHONY : RodeoStat/score.cpp.o
+
+RodeoStat/score.i: RodeoStat/score.cpp.i
+.PHONY : RodeoStat/score.i
+
+# target to preprocess a source file
+RodeoStat/score.cpp.i:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.i
+.PHONY : RodeoStat/score.cpp.i
+
+RodeoStat/score.s: RodeoStat/score.cpp.s
+.PHONY : RodeoStat/score.s
+
+# target to generate assembly for a file
+RodeoStat/score.cpp.s:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.s
+.PHONY : RodeoStat/score.cpp.s
 
 ViewModel.o: ViewModel.cpp.o
 .PHONY : ViewModel.o
@@ -325,9 +445,24 @@ help:
 	@echo "... MainWindow.xaml.o"
 	@echo "... MainWindow.xaml.i"
 	@echo "... MainWindow.xaml.s"
+	@echo "... RodeoStat/clock.o"
+	@echo "... RodeoStat/clock.i"
+	@echo "... RodeoStat/clock.s"
+	@echo "... RodeoStat/contestant.o"
+	@echo "... RodeoStat/contestant.i"
+	@echo "... RodeoStat/contestant.s"
+	@echo "... RodeoStat/control.o"
+	@echo "... RodeoStat/control.i"
+	@echo "... RodeoStat/control.s"
+	@echo "... RodeoStat/graphics.o"
+	@echo "... RodeoStat/graphics.i"
+	@echo "... RodeoStat/graphics.s"
 	@echo "... RodeoStat/rodeostat.o"
 	@echo "... RodeoStat/rodeostat.i"
 	@echo "... RodeoStat/rodeostat.s"
+	@echo "... RodeoStat/score.o"
+	@echo "... RodeoStat/score.i"
+	@echo "... RodeoStat/score.s"
 	@echo "... ViewModel.o"
 	@echo "... ViewModel.i"
 	@echo "... ViewModel.s"

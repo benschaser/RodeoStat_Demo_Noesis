@@ -2,21 +2,24 @@
 #include "clock.h"
 
 void Clock::start() {
+    auto now = std::chrono::system_clock::now();
     if (running) {
-        paused += (std::chrono::system_clock::now() - end_time);
+        paused += (now - end_time);
     }
     else {
-        start_time = std::chrono::system_clock::now();
+        start_time = now;
         running = true;
     }   
 }
 void Clock::pause() {
-    running = false;
     end_time = std::chrono::system_clock::now();
+    running = false;
+    elapsed += end_time - start_time;
 }
 void Clock::update() {
+    auto now = std::chrono::system_clock::now();
     if (running) {
-        elapsed = std::chrono::system_clock::now() - start_time;
+        elapsed = now - start_time;
     }
 }
 void Clock::reset() {

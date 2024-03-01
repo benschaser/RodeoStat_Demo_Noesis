@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc librodeostat.a CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc librodeostat.a CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.o CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.o CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.o CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib librodeostat.a

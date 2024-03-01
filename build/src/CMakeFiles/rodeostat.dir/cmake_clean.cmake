@@ -1,6 +1,16 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.o.d"
+  "CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.o.d"
+  "CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.o.d"
+  "CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.o.d"
   "CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o"
   "CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o.d"
+  "CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o"
+  "CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o.d"
   "librodeostat.a"
   "librodeostat.pdb"
 )

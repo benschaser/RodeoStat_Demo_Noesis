@@ -6,7 +6,32 @@
 },
 {
   "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/app_xaml.dir/App.xaml.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -isystem /opt/homebrew/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/rodeostat.dir/RodeoStat/graphics.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/graphics.cpp",
+  "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/graphics.cpp"
+},
+{
+  "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -isystem /opt/homebrew/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/rodeostat.dir/RodeoStat/control.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/control.cpp",
+  "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/control.cpp"
+},
+{
+  "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -isystem /opt/homebrew/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/rodeostat.dir/RodeoStat/clock.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/clock.cpp",
+  "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/clock.cpp"
+},
+{
+  "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -isystem /opt/homebrew/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/score.cpp",
+  "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/score.cpp"
+},
+{
+  "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -isystem /opt/homebrew/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/rodeostat.dir/RodeoStat/contestant.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/contestant.cpp",
+  "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/contestant.cpp"
+},
+{
+  "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/app_xaml.dir/App.xaml.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.cpp",
   "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.cpp"
 },
 {
@@ -21,7 +46,7 @@
 },
 {
   "directory": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src -isystem /opt/homebrew/include -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/main.dir/main.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src -I/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin -isystem /opt/homebrew/include -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include -isystem /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=c++17 -ggdb -O3 -o CMakeFiles/main.dir/main.cpp.o -c /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/main.cpp",
   "file": "/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/main.cpp"
 },
 {

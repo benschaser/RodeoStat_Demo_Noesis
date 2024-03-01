@@ -1436,15 +1436,26 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp/EmbeddedXamlProvider.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/NexaHeavy.ttf.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources.xaml.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.bin.h
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NotoSans-Regular.ttf.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/SegMDL2.ttf.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/App.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/MainWindow.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/Resources.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Brushes.DarkRed.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Colors.Dark.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.DarkRed.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Fonts.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Styles.xaml.bin.h
 
 
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.bin.h:
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.DarkRed.xaml.bin.h:
 
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/NexaHeavy.ttf.bin.h:
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Brushes.DarkRed.xaml.bin.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/Resources.xaml.bin.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/MainWindow.xaml.bin.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.h:
 
@@ -1587,6 +1598,8 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Timeline.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/AnimationTimeline.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/bin.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/ColorAnimationBase.h:
 
@@ -1927,6 +1940,8 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BaseFreezableCollection.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/FreezableCollection.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/App.xaml.bin.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/GradientStopCollection.h:
 
@@ -3088,11 +3103,15 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/system_clock.h:
 
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/SegMDL2.ttf.bin.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Visual.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Fonts.xaml.bin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_aggregate.h:
 
@@ -3736,6 +3755,8 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_bounded_array.h:
 
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Colors.Dark.xaml.bin.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_class.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/DependencyObject.inl:
@@ -3864,6 +3885,8 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h:
 
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NotoSans-Regular.ttf.bin.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_time_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdint:
@@ -3895,8 +3918,6 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/PauseStoryboard.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/invoke.h:
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources.xaml.bin.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_clr.h:
 
@@ -4146,8 +4167,6 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
 
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.bin.h:
-
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BaseBinding.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
@@ -4269,6 +4288,8 @@ src/CMakeFiles/main.dir/main.cpp.o: /Users/benschaser/Documents/College_Work/Sen
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int64_t.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Styles.xaml.bin.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/SplinePoint3DKeyFrame.h:
 

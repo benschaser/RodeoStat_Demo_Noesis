@@ -6,4 +6,5 @@ class Control {
 public:
     Clock clock;
     Score score;
+    void reset();
 };

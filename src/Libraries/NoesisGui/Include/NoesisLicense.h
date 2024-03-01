@@ -14,5 +14,5 @@
 #endif
 
 #ifndef NS_LICENSE_KEY
-    #define NS_LICENSE_KEY "mo4N48fDDePglc8nF/19ZzfxyamkorTdIdhDaw1wOO1DW28R"
+    #define NS_LICENSE_KEY "jd5s0emTbNG2WIY+gQZsvmRucdl5/UEYFZ+VKnyozhOTgoWk"
 #endif

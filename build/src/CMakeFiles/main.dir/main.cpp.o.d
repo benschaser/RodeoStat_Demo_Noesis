@@ -1434,7 +1434,14 @@ src/CMakeFiles/main.dir/main.cpp.o: \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp/EmbeddedXamlProvider.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/NexaHeavy.ttf.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/App.xaml.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources.xaml.bin.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/MainWindow.xaml.bin.h
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NotoSans-Regular.ttf.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/SegMDL2.ttf.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/App.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/MainWindow.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/Resources.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Brushes.DarkRed.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Colors.Dark.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.DarkRed.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Fonts.xaml.bin.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Resources/Bin/NoesisTheme.Styles.xaml.bin.h

@@ -8,18 +8,7 @@
 #include "MainWindow.xaml.h"
 #include "App.xaml.h"
 
-#include "NexaHeavy.ttf.bin.h"
-#include "App.xaml.bin.h"
-#include "Resources.xaml.bin.h"
-#include "MainWindow.xaml.bin.h"
-
-#ifndef NS_LICENSE_NAME
-    #define NS_LICENSE_NAME "RodeoStat"
-#endif
-
-#ifndef NS_LICENSE_KEY
-    #define NS_LICENSE_KEY "mo4N48fDDePglc8nF/19ZzfxyamkorTdIdhDaw1wOO1DW28R"
-#endif
+#include "bin.h"
 
 using namespace Noesis;
 using namespace NoesisApp;
@@ -34,9 +23,14 @@ private:
     Noesis::Ptr<XamlProvider> GetXamlProvider() const override {
         EmbeddedXaml xamls[] = 
         {
-            { "App.xaml", App_xaml },
-            { "Resources.xaml", Resources_xaml },
-            { "MainWindow.xaml", MainWindow_xaml }
+            { "App.xaml", APP_XAML },
+            { "MainWindow.xaml", MAINWINDOW_XAML },
+            { "Resources.xaml", RESOURCES_XAML },
+            { "Resources/Themes/NoesisTheme.Styles.xaml", NOESISTHEME_STYLES_XAML },
+            { "Resources/Themes/NoesisTheme.Colors.Dark.xaml", NOESISTHEME_COLORS_DARK_XAML },
+            { "Resources/Themes/NoesisTheme.Brushes.DarkRed.xaml", NOESISTHEME_BRUSHES_DARKRED_XAML },
+            { "Resources/Themes/NoesisTheme.DarkRed.xaml", NOESISTHEME_DARKRED_XAML },
+            { "Resources/Themes/NoesisTheme.Fonts.xaml", NOESISTHEME_FONTS_XAML },
         };
 
         return *new EmbeddedXamlProvider(xamls);
@@ -45,7 +39,8 @@ private:
     Noesis::Ptr<FontProvider> GetFontProvider() const override {
         EmbeddedFont fonts[] = 
         {
-            { "", Nexa_Heavy_ttf }
+            { "", NOTOSANS_REGULAR_TTF },
+            { "", SEGMDL2_TTF}
         };
 
         return *new EmbeddedFontProvider(fonts);

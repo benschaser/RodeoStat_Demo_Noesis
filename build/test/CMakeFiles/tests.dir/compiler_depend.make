@@ -773,6 +773,7 @@ test/CMakeFiles/tests.dir/test.cpp.o: /Users/benschaser/Documents/College_Work/S
   _deps/catch2-src/src/catch2/internal/catch_test_registry.hpp \
   _deps/catch2-src/src/catch2/interfaces/catch_interfaces_test_invoker.hpp \
   _deps/catch2-src/src/catch2/internal/catch_preprocessor_remove_parens.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/thread \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/rodeostat.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/control.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/clock.h \
@@ -950,12 +951,6 @@ test/CMakeFiles/tests.dir/test.cpp.o: /Users/benschaser/Documents/College_Work/S
 
 /opt/homebrew/include/SFML/System/Thread.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_unique_copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binder2nd.h:
-
-/opt/homebrew/include/SFML/System/Thread.hpp:
-
 _deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
@@ -995,6 +990,8 @@ _deps/catch2-src/src/catch2/internal/catch_stringref.hpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uint64_t.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/RodeoStat/score.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/thread:
 
 _deps/catch2-src/src/catch2/internal/catch_preprocessor_remove_parens.hpp:
 
@@ -1133,6 +1130,12 @@ _deps/catch2-src/src/catch2/catch_tostring.hpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
+
+/opt/homebrew/include/SFML/System/Thread.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_unique_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binder2nd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/math.h:
 
