@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/benschaser/Documents/College_Work/Senior_24/Semester_2
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && /opt/homebrew/Cellar/cmake/3.25.2/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && /opt/homebrew/Cellar/cmake/3.25.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -131,6 +151,20 @@ rodeostat/fast:
 .PHONY : rodeostat/fast
 
 # Convenience name for target.
+src/CMakeFiles/viewmodel.dir/rule:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/viewmodel.dir/rule
+.PHONY : src/CMakeFiles/viewmodel.dir/rule
+
+# Convenience name for target.
+viewmodel: src/CMakeFiles/viewmodel.dir/rule
+.PHONY : viewmodel
+
+# fast build rule for target.
+viewmodel/fast:
+	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
+.PHONY : viewmodel/fast
+
+# Convenience name for target.
 src/CMakeFiles/app_xaml.dir/rule:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/app_xaml.dir/rule
 .PHONY : src/CMakeFiles/app_xaml.dir/rule
@@ -157,20 +191,6 @@ mainwindow_xaml: src/CMakeFiles/mainwindow_xaml.dir/rule
 mainwindow_xaml/fast:
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/build
 .PHONY : mainwindow_xaml/fast
-
-# Convenience name for target.
-src/CMakeFiles/viewmodel.dir/rule:
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/viewmodel.dir/rule
-.PHONY : src/CMakeFiles/viewmodel.dir/rule
-
-# Convenience name for target.
-viewmodel: src/CMakeFiles/viewmodel.dir/rule
-.PHONY : viewmodel
-
-# fast build rule for target.
-viewmodel/fast:
-	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
-.PHONY : viewmodel/fast
 
 # Convenience name for target.
 src/CMakeFiles/main.dir/rule:
@@ -433,6 +453,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... app_xaml"
 	@echo "... main"

@@ -45,6 +45,16 @@ private:
 
         return *new EmbeddedFontProvider(fonts);
     }
+
+    Noesis::Ptr<TextureProvider> GetTextureProvider() const override
+    {
+        EmbeddedTexture textures[] = 
+        {
+            { "Resources/Images/RS_logo.png", RS_LOGO },
+        };
+
+        return *new EmbeddedTextureProvider(textures);
+    }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

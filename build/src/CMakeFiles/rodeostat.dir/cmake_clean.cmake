@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/rodeostat.dir/RodeoStat/rodeostat.cpp.o.d"
   "CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o"
   "CMakeFiles/rodeostat.dir/RodeoStat/score.cpp.o.d"
-  "librodeostat.a"
+  "librodeostat.dylib"
   "librodeostat.pdb"
 )
 

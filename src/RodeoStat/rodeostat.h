@@ -13,7 +13,7 @@ public:
     void remove_contestant(int index);
     void save_contestant_stats();
 
-    int current_contestant{0};
+    int current_contestant = 0;
     std::vector<Contestant> contestants;
 private:
     Settings settings;

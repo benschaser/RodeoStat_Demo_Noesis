@@ -1,4 +1,5 @@
 #include "graphics.h"
+#include <SFML/Graphics.hpp>
 
 Graphics::Graphics() {
     frame.create(width, height);

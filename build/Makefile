@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/benschaser/Documents/College_Work/Senior_24/Semester_2
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/opt/homebrew/Cellar/cmake/3.25.2/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/opt/homebrew/Cellar/cmake/3.25.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -130,6 +150,19 @@ rodeostat/fast:
 .PHONY : rodeostat/fast
 
 #=============================================================================
+# Target rules for targets named viewmodel
+
+# Build rule for target.
+viewmodel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 viewmodel
+.PHONY : viewmodel
+
+# fast build rule for target.
+viewmodel/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
+.PHONY : viewmodel/fast
+
+#=============================================================================
 # Target rules for targets named app_xaml
 
 # Build rule for target.
@@ -154,19 +187,6 @@ mainwindow_xaml: cmake_check_build_system
 mainwindow_xaml/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mainwindow_xaml.dir/build.make src/CMakeFiles/mainwindow_xaml.dir/build
 .PHONY : mainwindow_xaml/fast
-
-#=============================================================================
-# Target rules for targets named viewmodel
-
-# Build rule for target.
-viewmodel: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 viewmodel
-.PHONY : viewmodel
-
-# fast build rule for target.
-viewmodel/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel.dir/build.make src/CMakeFiles/viewmodel.dir/build
-.PHONY : viewmodel/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -227,6 +247,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"

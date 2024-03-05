@@ -2,13 +2,17 @@
 add_library(rodeostat RodeoStat/rodeostat.cpp RodeoStat/graphics.cpp RodeoStat/control.cpp RodeoStat/clock.cpp RodeoStat/score.cpp RodeoStat/contestant.cpp)
 target_include_directories(rodeostat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/RodeoStat)
 
+find_package(SFML REQUIRED graphics)
+target_include_directories(rodeostat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
+target_link_libraries(rodeostat PUBLIC sfml-graphics)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
+
+add_library(viewmodel ViewModel.cpp)
+target_include_directories(viewmodel PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 add_library(app_xaml App.xaml.cpp)
 target_include_directories(app_xaml PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 add_library(mainwindow_xaml MainWindow.xaml.cpp)
 target_include_directories(mainwindow_xaml PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-add_library(viewmodel ViewModel.cpp)
-target_include_directories(viewmodel PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_include_directories(app_xaml PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin)
 
 
 add_library(noesis SHARED IMPORTED)
@@ -23,18 +27,32 @@ set_target_properties(noesisapp PROPERTIES
     IMPORTED_LOCATION           ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib
 )
 
-find_package(SFML REQUIRED system window graphics network audio)
-target_link_libraries(rodeostat sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
-
 target_link_libraries(viewmodel rodeostat)
 
+target_link_libraries(app_xaml noesisapp)
 target_link_libraries(app_xaml noesis)
+target_link_libraries(mainwindow_xaml noesisapp)
 target_link_libraries(mainwindow_xaml noesis)
 target_link_libraries(viewmodel noesis)
+target_link_libraries(viewmodel app_xaml)
+target_link_libraries(mainwindow_xaml viewmodel)
+
+# include(FetchContent)
+# FetchContent_Declare(SFML
+#     GIT_REPOSITORY https://github.com/SFML/SFML.git
+#     GIT_TAG 2.6.x)
+# FetchContent_MakeAvailable(SFML)
+
+# add_library(sfml SHARED IMPORTED)
+# set_target_properties(sfml PROPERTIES
+# 	INTERFACE_INCLUDE_DIRECTORIES	${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include
+#     IMPORTED_LOCATION           ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/lib/libsfml-graphics.dylib
+# )
 
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/AddIconToBinary.cmake)
-AddIconToBinary(SOURCE_FILES ICONS ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.ico ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.icns)
+
+# include(${CMAKE_CURRENT_SOURCE_DIR}/AddIconToBinary.cmake)
+# AddIconToBinary(SOURCE_FILES ICONS ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.ico ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.icns)
 
 # Embedding XAML files into C style array headers
 include(bin2h.cmake)
@@ -49,6 +67,9 @@ bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources.xaml HEADER_FILE ${CMAKE
 # bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Themes/Fonts/SegMDL2.ttf HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/SegMDL2.ttf.bin.h VARIABLE_NAME SegMDL2_ttf REPLACE)
 # message("Embedding 'NotoSans-Regular.ttf' into header file '/Resources/Bin/NotoSans-Regular.ttf.bin.h")
 # bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Themes/Fonts/NotoSans-Regular.ttf HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/NotoSans-Regular.ttf.bin.h VARIABLE_NAME NotoSans_Regular_ttf REPLACE)
+
+# message("Embedding 'RS_logo.png' into header file '/Resources/Bin/RS_logo.png.bin.h")
+# bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Images/RS_logo.png HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/RS_logo.png.bin.h VARIABLE_NAME RS_logo REPLACE)
 
 # message("Embedding 'NoesisTheme.Styles.xaml' into header file '/Resources/Bin/NoesisTheme.Styles.xaml.bin.h")
 # bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Themes/NoesisTheme.Styles.xaml HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/NoesisTheme.Styles.xaml.bin.h VARIABLE_NAME NoesisTheme_styles_xaml REPLACE)
@@ -66,9 +87,10 @@ bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources.xaml HEADER_FILE ${CMAKE
 
 # main application code, links to library
 add_executable(main main.cpp)
-target_link_libraries(main PRIVATE rodeostat)
+target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin)
+target_link_libraries(main PUBLIC rodeostat)
 target_link_libraries(main PRIVATE noesis)
 target_link_libraries(main PRIVATE noesisapp)
 target_link_libraries(main PRIVATE app_xaml)
-target_link_libraries(main PRIVATE mainwindow_xaml)
 target_link_libraries(main PRIVATE viewmodel)
+target_link_libraries(main PRIVATE mainwindow_xaml)

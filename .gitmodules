@@ -1,3 +1,6 @@
 [submodule "build/_deps/catch2-src"]
 	path = build/_deps/catch2-src
 	url = https://github.com/catchorg/Catch2.git
+[submodule "build/_deps/sfml-src"]
+	path = build/_deps/sfml-src
+	url = https://github.com/SFML/SFML.git
