@@ -9,38 +9,18 @@
 #include <NsApp/DelegateCommand.h>
 #include <NsGui/DynamicTextureSource.h>
 #include <NsGui/ComboBox.h>
+#include <NsRender/Texture.h>
+#include <NsGui/Image.h>
 #include <vector>
 #include <string>
 
-// #include <RodeoStat/rodeostat.h>
+#include <RodeoStat/rodeostat.h>
 
 
 namespace RS
 {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// class ViewModel final: public Noesis::BaseComponent
-// {
-// public:
-//     ViewModel();
-    
-
-// private:
-//     const NoesisApp::DelegateCommand* GetStartCommand() const;
-//     const NoesisApp::DelegateCommand* GetSettingsCommand() const;
-//     const NoesisApp::DelegateCommand* GetExitCommand() const;
-
-//     void Start(BaseComponent* param);
-//     void Settings(BaseComponent* param);
-//     void Exit(BaseComponent* param);
-
-// private:
-//     NoesisApp::DelegateCommand _startCommand;
-//     NoesisApp::DelegateCommand _settingsCommand;
-//     NoesisApp::DelegateCommand _exitCommand;
-
-//     NS_DECLARE_REFLECTION(ViewModel, BaseComponent)
-// };
 
 enum class Event {
     BullRiding,
@@ -70,14 +50,13 @@ public:
     ViewModel();
 private:
     // RodeoStat rs;
-    // Graphics graphics;
+    Graphics graphics{840, 472};
     // Control control;
     struct Contestant;
 
     void SetSelectedContestant(Contestant* value);
     Contestant* GetSelectedContestant() const;
 
-    
 
     const NoesisApp::DelegateCommand* GetOpenAddContestantPopupCommand() const;
     void OpenAddContestantPopup(BaseComponent* param);
@@ -86,18 +65,19 @@ private:
     const NoesisApp::DelegateCommand* GetAddContestantCommand() const;
     void AddContestant(BaseComponent* param);
 
-
-
     Noesis::Ptr<Noesis::ObservableCollection<Contestant>> contestants;
     Contestant* selected_contestant;
     Noesis::String add_contestant_fname;
     Noesis::String add_contestant_lname;
     Noesis::String add_contestant_event_str;
+    Noesis::Ptr<Noesis::ImageSource> preview_image;
     int add_contestant_event_index;
-    // Noesis::Ptr<Noesis::ComboBoxItem> add_contestant_event;
     bool add_contestant_popup_open = false;
-    // Noesis::DynamicTextureSource display_frame;
+    int display_width = 840;
+    int display_height = 472;
 
+    // Noesis::DynamicTexture display_frame;
+    Noesis::Ptr<Noesis::DynamicTextureSource> display_frame;
     
 private:
     NoesisApp::DelegateCommand _OpenAddContestantPopupCommand;
@@ -109,4 +89,3 @@ private:
 
 
 }
-// NS_DECLARE_REFLECTION_ENUM(RS::Event)

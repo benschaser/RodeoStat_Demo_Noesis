@@ -172,6 +172,9 @@ src/librodeostat_lib.dylib: src/CMakeFiles/rodeostat_lib.dir/RodeoStat/clock.cpp
 src/librodeostat_lib.dylib: src/CMakeFiles/rodeostat_lib.dir/RodeoStat/score.cpp.o
 src/librodeostat_lib.dylib: src/CMakeFiles/rodeostat_lib.dir/RodeoStat/contestant.cpp.o
 src/librodeostat_lib.dylib: src/CMakeFiles/rodeostat_lib.dir/build.make
+src/librodeostat_lib.dylib: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
+src/librodeostat_lib.dylib: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
+src/librodeostat_lib.dylib: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 src/librodeostat_lib.dylib: src/CMakeFiles/rodeostat_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library librodeostat_lib.dylib"
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rodeostat_lib.dir/link.txt --verbose=$(VERBOSE)

@@ -1,16 +1,21 @@
 #pragma once
-// #include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
+#include "../Resources/Bin/NotoSans-Regular.ttf.bin.h"
 #include "contestant.h"
 
 class Graphics {
 public:
-    Graphics();
-    // const sf::Texture& get_frame();
+    Graphics(int width, int height);
+    const sf::Texture& get_frame();
     void update_frame(const Contestant& contestant);
+    void make_frame(std::string name, std::string event, double score, double time);
 
-    int width{240}, height{240};
-    int display_width{480};
+    int frame_width, frame_height;
+    int display_width;
+
+    sf::Texture frame_texture;
+    sf::Image frame_img;
 private:
-    // sf::Texture frame;
+    
     // sf::Texture display_frame;
 };

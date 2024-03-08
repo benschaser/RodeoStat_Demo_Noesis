@@ -9,71 +9,17 @@
 #include <NsApp/DelegateCommand.h>
 #include <NsGui/Popup.h>
 #include <NsGui/ComboBox.h>
+#include <NsGui/TextureSource.h>
 #include <iostream>
 
 
-// #include <RodeoStat/rodeostat.h>
+#include <RodeoStat/rodeostat.h>
 
 
-// using namespace NoesisApp;
 using namespace Noesis;
 using namespace RS;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ViewModel::ViewModel()
-// {
-//     _startCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Start));
-//     _settingsCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Settings));
-//     _exitCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::Exit));
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DelegateCommand* ViewModel::GetStartCommand() const
-// {
-//     return &_startCommand;
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DelegateCommand* ViewModel::GetSettingsCommand() const
-// {
-//     return &_settingsCommand;
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DelegateCommand* ViewModel::GetExitCommand() const
-// {
-//     return &_exitCommand;
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// void ViewModel::Start(BaseComponent*)
-// {
-//     NS_LOG_INFO("Start App");
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// void ViewModel::Settings(BaseComponent*)
-// {
-//     // NS_LOG_INFO("Change Settings");
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// void ViewModel::Exit(BaseComponent*)
-// {
-//     NS_LOG_INFO("Exit App");
-// }
-
-// ////////////////////////////////////////////////////////////////////////////////////////////////////
-// NS_BEGIN_COLD_REGION
-
-// NS_IMPLEMENT_REFLECTION(ViewModel)
-// {
-//     NsProp("StartCommand", &ViewModel::GetStartCommand);
-//     NsProp("SettingsCommand", &ViewModel::GetSettingsCommand);
-//     NsProp("ExitCommand", &ViewModel::GetExitCommand);
-// }
-
-// NS_END_COLD_REGION
 
 struct ViewModel::Contestant: BaseComponent {
 public:
@@ -93,12 +39,16 @@ private:
 
 
 ViewModel::ViewModel() {
-    // rs.add_contestant("Ben", "Schaser", "Bullriding", 0.00, 0.00);
     _OpenAddContestantPopupCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::OpenAddContestantPopup));
     _CloseAddContestantPopupCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::CloseAddContestantPopup));
     _AddContestantCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::AddContestant));
 
     contestants = *new ObservableCollection<Contestant>();
+    // display_frame = *new DynamicTextureSource(display_width, display_height);
+    
+    // const sf::Uint8* pixels = graphics.frame_img.getPixelsPtr();
+    // const uint8_t pix = *pixels;
+
 
     Ptr<Contestant> c = *new Contestant();
     c->fname = "Ben";
@@ -120,8 +70,6 @@ ViewModel::ViewModel() {
 
     selected_contestant = contestants->Get(0);
 
-    // selected_contestant = nullptr;
-    // display_frame.BeginInit();
 }
 
 void ViewModel::SetSelectedContestant(Contestant* value) {
@@ -129,13 +77,14 @@ void ViewModel::SetSelectedContestant(Contestant* value) {
     {
         selected_contestant = value;
         OnPropertyChanged("SelectedContestant");
+
+        graphics.make_frame(value->name.Str(), value->event.Str(), value->score, value->time);
+        // graphics.make_frame("JH", "Barrel", 12.1, 39.9);
     }
 }
 ViewModel::Contestant* ViewModel::GetSelectedContestant() const {
     return selected_contestant;
 }
-
-
 
 const NoesisApp::DelegateCommand* ViewModel::GetOpenAddContestantPopupCommand() const {
     return &_OpenAddContestantPopupCommand;
@@ -168,13 +117,38 @@ void ViewModel::AddContestant(BaseComponent* param) {
     
     add_contestant_fname = "";
     add_contestant_lname = "";
-    // *add_contestant_event = "";
 
     OnPropertyChanged("Contestants");
     OnPropertyChanged("AddContestantFName");
     OnPropertyChanged("AddContestantLName");
-    // OnPropertyChanged("AddContestantEvent");
 }
+
+// Ptr<Noesis::Image> ConvertSfmlImageToNoesisImage(const sf::Image& sfmlImage) {
+//     // Get the size of the image
+//     sf::Vector2u size = sfmlImage.getSize();
+//     unsigned int width = size.x;
+//     unsigned int height = size.y;
+
+//     // Get the pixel data from the SFML image
+//     const sf::Uint8* pixels = sfmlImage.getPixelsPtr();
+//     const uint8_t* pix = pixels;
+//     // ConvertUInt8ArrayToInt32Array(pixels, pixels2, width*height);
+
+//     // Create a texture source
+//     Noesis::TextureSource texture;
+//     texture.Create(width, height, 72, 72, *pix, 8, BitmapSource.Format.RGBA8);
+//     Ptr<Noesis::TextureSource> textureSource = *new Noesis::TextureSource();
+
+//     // Update the texture data
+//     // static_cast<Noesis::TextureSource*>(textureSource.GetPtr())->UpdateTextureData(pixels);
+
+//     // Create a Noesis image
+//     Ptr<Noesis::Image> image = *new Noesis::Image();
+//     image->SetSource(textureSource);
+
+//     return image;
+// }
+
 
 
 NS_BEGIN_COLD_REGION
@@ -189,6 +163,7 @@ NS_IMPLEMENT_REFLECTION(ViewModel) {
     NsProp("AddContestantFName", &ViewModel::add_contestant_fname);
     NsProp("AddContestantLName", &ViewModel::add_contestant_lname);
     NsProp("AddContestantEventIndex", &ViewModel::add_contestant_event_index);
+    NsProp("PreviewFrame", &ViewModel::preview_image);
 }
 
 NS_END_COLD_REGION

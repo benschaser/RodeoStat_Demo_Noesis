@@ -27,14 +27,10 @@
             <Button Style="{StaticResource StatusIconBtn}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xE103;</Button>
             <Separator/>
             <Label Style="{StaticResource StatusLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">Status</Label>
-
         </StatusBar>
-        <!-- <StackPanel x:Name="InfoPanel" Orientation="Horizontal" Height="24" DockPanel.Dock="Bottom" Background="Black" VerticalAlignment="Center">
-            <Label Style="{StaticResource InfoPanelLabel}" VerticalAlignment="Center" FontSize="12" Foreground="White">USB Serial Console Disconnected</Label>
-            <Label Style="{StaticResource InfoPanelIcon}"  VerticalAlignment="Center" FontSize="12" Foreground="White">&#xEA39; &#xE73E;</Label>
-        </StackPanel> -->
         <Border BorderBrush="Gray" BorderThickness="0,0,1,0" DockPanel.Dock="Left">
             <StackPanel x:Name="OptionsPanel" Orientation="Vertical" Width="240" HorizontalAlignment="Left" DockPanel.Dock="Left">
+                <Label Content="Options Panel" FontSize="16" Margin="8" Foreground="Red" />
                 <Button Content="Button" Margin="8" Cursor="Hand"/>
             </StackPanel>
         </Border>
@@ -65,28 +61,11 @@
                 
             </DockPanel>
         </Border>
-
-
-        <!-- <StackPanel x:Name="CommandPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top" Template="{StaticResource RSBorderB}">
-            <Button Content="RodeoStat" Margin="8" Cursor="Hand"/>
-        </StackPanel> -->
-        <!-- <StackPanel x:Name="InfoPanel" Orientation="Horizontal" Height="24" DockPanel.Dock="Bottom" Background="{StaticResource Brush.Background.Checked}">
-             <Label Content="&#xE930" FontSize="12" Margin="4" Foreground="White" FontFamily="{StaticResource Font.Family.Icons}"/>
-        </StackPanel> -->
-        
-        <!-- <StackPanel x:Name="OptionsPanel" Orientation="Vertical" Width="120" HorizontalAlignment="Left" DockPanel.Dock="Left">
-            <Button Content="Button" Margin="8"/>
-        </StackPanel> -->
-        <!-- <Grid x:Name="ControlPanel" DockPanel.Dock="Bottom" Height="240">
-            <Label Content="Label" FontSize="30" Margin="5" Foreground="OrangeRed" />
-        </Grid> -->
-        <!-- <StackPanel x:Name="ContestantPanel" Orientation="Vertical" Width="120" DockPanel.Dock="Right">
-            
-        </StackPanel> -->
-        <Grid x:Name="Viewport" Background="Black">
-
+        <Grid x:Name="Viewport" Background="{StaticResource Gray9}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid x:Name="DisplayPreviewContainer" Background="Black" Width="840" Height="472">
+                <!-- <Image Source="{Binding PreviewFrame, Mode=OnewWayToSource}"/> -->
+            </Grid>
         </Grid>
-        
     </DockPanel>
     <Popup x:Name="AddContestantPopup" IsOpen="{Binding AddContestantPopupOpen}" PlacementTarget="{Binding ElementName=MainGrid}" Placement="Center" PopupAnimation="Slide" Focusable="True" StaysOpen="False">
         <Border BorderBrush="Gray" BorderThickness="1" Background="{StaticResource Gray8}" Width="480" Height="240">

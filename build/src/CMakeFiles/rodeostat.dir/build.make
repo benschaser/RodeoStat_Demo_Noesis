@@ -99,6 +99,9 @@ src/RodeoStat.app/Contents/MacOS/RodeoStat: src/CMakeFiles/RodeoStat.dir/build.m
 src/RodeoStat.app/Contents/MacOS/RodeoStat: src/libmainwindow_xaml.dylib
 src/RodeoStat.app/Contents/MacOS/RodeoStat: src/libviewmodel.dylib
 src/RodeoStat.app/Contents/MacOS/RodeoStat: src/librodeostat_lib.dylib
+src/RodeoStat.app/Contents/MacOS/RodeoStat: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
+src/RodeoStat.app/Contents/MacOS/RodeoStat: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
+src/RodeoStat.app/Contents/MacOS/RodeoStat: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 src/RodeoStat.app/Contents/MacOS/RodeoStat: src/libapp_xaml.dylib
 src/RodeoStat.app/Contents/MacOS/RodeoStat: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/Noesis.dylib
 src/RodeoStat.app/Contents/MacOS/RodeoStat: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib

@@ -94,6 +94,9 @@ src/libmainwindow_xaml.dylib: src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml
 src/libmainwindow_xaml.dylib: src/CMakeFiles/mainwindow_xaml.dir/build.make
 src/libmainwindow_xaml.dylib: src/libviewmodel.dylib
 src/libmainwindow_xaml.dylib: src/librodeostat_lib.dylib
+src/libmainwindow_xaml.dylib: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
+src/libmainwindow_xaml.dylib: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
+src/libmainwindow_xaml.dylib: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 src/libmainwindow_xaml.dylib: src/libapp_xaml.dylib
 src/libmainwindow_xaml.dylib: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib
 src/libmainwindow_xaml.dylib: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/Noesis.dylib

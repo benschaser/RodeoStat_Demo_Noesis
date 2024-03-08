@@ -94,6 +94,9 @@ src/libviewmodel.dylib: src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o
 src/libviewmodel.dylib: src/CMakeFiles/viewmodel.dir/build.make
 src/libviewmodel.dylib: src/librodeostat_lib.dylib
 src/libviewmodel.dylib: src/libapp_xaml.dylib
+src/libviewmodel.dylib: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
+src/libviewmodel.dylib: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
+src/libviewmodel.dylib: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 src/libviewmodel.dylib: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/Noesis.dylib
 src/libviewmodel.dylib: /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib
 src/libviewmodel.dylib: src/CMakeFiles/viewmodel.dir/link.txt

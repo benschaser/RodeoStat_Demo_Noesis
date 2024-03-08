@@ -8,7 +8,7 @@
 class RodeoStat {
 public:
     Control control;
-    Graphics graphics;
+    Graphics graphics{240, 240};
     void add_contestant(std::string fname, std::string lname, std::string event, double time, double score);
     void remove_contestant(int index);
     void save_contestant_stats();
