@@ -14,6 +14,7 @@ class MainWindow final: public NoesisApp::Window
 public:
     MainWindow();
 
+
 private:
     void InitializeComponent();
     void OnInitialized(BaseComponent*, const Noesis::EventArgs&);

@@ -2,6 +2,7 @@
 #include "ViewModel.h"
 
 #include <NsGui/IntegrationAPI.h>
+#include <NsApp/Window.h>
 #include <NsGui/Uri.h>
 #include <NsCore/ReflectionImplementEmpty.h>
 
@@ -30,6 +31,8 @@ void MainWindow::OnInitialized(BaseComponent*, const EventArgs&)
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 NS_BEGIN_COLD_REGION
 
 NS_IMPLEMENT_REFLECTION_(RS::MainWindow, "RodeoStat.MainWindow")

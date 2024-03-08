@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
-  "main"
+  "main.app/Contents/Icons/rs.icns"
+  "main.app/Contents/MacOS/main"
   "main.pdb"
 )
 

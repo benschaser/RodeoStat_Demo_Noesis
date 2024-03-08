@@ -93,11 +93,8 @@ tests_EXTERNAL_OBJECTS =
 test/tests: test/CMakeFiles/tests.dir/test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/build.make
 test/tests: _deps/catch2-build/src/libCatch2Main.3.5.0.dylib
-test/tests: src/librodeostat.dylib
+test/tests: src/librodeostat_lib.dylib
 test/tests: _deps/catch2-build/src/libCatch2.3.5.0.dylib
-test/tests: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
-test/tests: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
-test/tests: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 test/tests: test/CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"
 	cd /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)

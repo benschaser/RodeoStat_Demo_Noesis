@@ -5,13 +5,12 @@
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:local="clr-namespace:RodeoStat"
         xmlns:noesis="clr-namespace:NoesisGUIExtensions;assembly=Noesis.GUI.Extensions"
-        Focusable="True"
         TextElement.FontFamily="#Noto Sans"
-        Background="#2d2e32"
+        Background="{StaticResource Gray8}"
         Title="RodeoStat"
         d:DesignWidth="1440" d:DesignHeight="900"
         Width="1440" Height="900">
-
+    <Grid x:Name="MainGrid" Focusable="False">    
     <DockPanel LastChildFill="True">
         <Border BorderBrush="Gray" BorderThickness="0,0,0,1" Height="48" DockPanel.Dock="Top">
             <StackPanel x:Name="CommandPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top">
@@ -45,11 +44,9 @@
             </Grid>
         </Border>
         <Border BorderBrush="Gray" BorderThickness="1,0,0,0" DockPanel.Dock="Right">
-            <StackPanel x:Name="ContestantPanel" Orientation="Vertical" Width="360" DockPanel.Dock="Right">
-                <!-- <ListView SelectionMode="Single">
-
-                </ListView> -->
-                <ListView Height="200" SelectedItem="{Binding SelectedContestant}" ItemsSource="{Binding Contestants}">
+            <DockPanel x:Name="ContestantPanel" Width="360" LastChildFill="False">
+                
+                <ListView SelectedItem="{Binding SelectedContestant}" ItemsSource="{Binding Contestants}" DockPanel.Dock="Top">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name"/>
@@ -59,13 +56,14 @@
                         </GridView>
                     </ListView.View>
                 </ListView>
-                <StackPanel Orientation="Horizontal" Background="Gray">
-                    <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE710;" Margin="8" Cursor="Hand" Width="48"/>
+                <WrapPanel Background="{StaticResource Gray9}" DockPanel.Dock="Bottom">
+                    <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE710;" Margin="8" Cursor="Hand" Width="48" Command="{Binding OpenAddContestantPopupCommand}"/>
                     <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE70F;" Margin="8" Cursor="Hand" Width="48"/>
                     <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE74D;" Margin="8" Cursor="Hand" Width="48"/>
-                </StackPanel>
+                </WrapPanel>
                 
-            </StackPanel>
+                
+            </DockPanel>
         </Border>
 
 
@@ -88,5 +86,33 @@
         <Grid x:Name="Viewport" Background="Black">
 
         </Grid>
+        
     </DockPanel>
+    <Popup x:Name="AddContestantPopup" IsOpen="{Binding AddContestantPopupOpen}" PlacementTarget="{Binding ElementName=MainGrid}" Placement="Center" PopupAnimation="Slide" Focusable="True" StaysOpen="False">
+        <Border BorderBrush="Gray" BorderThickness="1" Background="{StaticResource Gray8}" Width="480" Height="240">
+            <StackPanel>
+                <ToolBar IsHoldingEnabled="False" Background="{StaticResource Gray9}">
+                    <Button FontFamily="#Segoe MDL2 Assets" Command="{Binding CloseAddContestantPopupCommand}" Cursor="Hand">&#xE10A;</Button>
+                </ToolBar>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBox Width="200" Height="36" Placeholder="First Name" Margin="8" Text="{Binding AddContestantFName}"/>
+                    <TextBox Width="200" Height="36" Placeholder="Last Name" Margin="8" Text="{Binding AddContestantLName}"/>
+                    <ComboBox Width="200" Margin="8" Placeholder="Event" SelectedIndex="{Binding AddContestantEventIndex, Mode=TwoWay}">
+                        <ComboBoxItem>Bull Riding</ComboBoxItem>
+                        <ComboBoxItem>Bareback Riding</ComboBoxItem>
+                        <ComboBoxItem>Saddle Bronc Riding</ComboBoxItem>
+                        <ComboBoxItem>Steer Wrestling</ComboBoxItem>
+                        <ComboBoxItem>Barrel Racing</ComboBoxItem>
+                        <ComboBoxItem>Team Roping</ComboBoxItem>
+                        <ComboBoxItem>Tie Down Roping</ComboBoxItem>
+                        <ComboBoxItem>Breakaway Roping</ComboBoxItem>
+                    </ComboBox>
+                </WrapPanel>
+                <StackPanel Orientation="Horizontal" Width="480" HorizontalAlignment="Right">
+                    <Button Content="Add" Margin="8" HorizontalAlignment="Right" Cursor="Hand" Command="{Binding AddContestantCommand}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Popup>
+    </Grid>
 </Window>

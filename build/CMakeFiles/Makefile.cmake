@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake"
+  "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/MacOSXBundleInfo.plist.in"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
@@ -56,11 +57,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Darwin.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/UnixPaths.cmake"
   "/opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
-  "/opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake"
-  "/opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake"
-  "/opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake"
-  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
-  "/opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:
@@ -72,6 +68,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/RodeoStat.app/Contents/MacOS"
+  "src/RodeoStat.app/Contents/Info.plist"
+  "src/RodeoStat.app/Contents/Info.plist"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/catch2-subbuild/CMakeLists.txt"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -82,11 +81,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/rodeostat.dir/DependInfo.cmake"
+  "src/CMakeFiles/rodeostat_lib.dir/DependInfo.cmake"
   "src/CMakeFiles/viewmodel.dir/DependInfo.cmake"
   "src/CMakeFiles/app_xaml.dir/DependInfo.cmake"
   "src/CMakeFiles/mainwindow_xaml.dir/DependInfo.cmake"
-  "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "src/CMakeFiles/RodeoStat.dir/DependInfo.cmake"
   "test/CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"

@@ -1,11 +1,11 @@
 # structure your project as a library for easy testing
-add_library(rodeostat RodeoStat/rodeostat.cpp RodeoStat/graphics.cpp RodeoStat/control.cpp RodeoStat/clock.cpp RodeoStat/score.cpp RodeoStat/contestant.cpp)
-target_include_directories(rodeostat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/RodeoStat)
+add_library(rodeostat_lib RodeoStat/rodeostat.cpp RodeoStat/graphics.cpp RodeoStat/control.cpp RodeoStat/clock.cpp RodeoStat/score.cpp RodeoStat/contestant.cpp)
+target_include_directories(rodeostat_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/RodeoStat)
 
-find_package(SFML REQUIRED graphics)
-target_include_directories(rodeostat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
-target_link_libraries(rodeostat PUBLIC sfml-graphics)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
+# find_package(SFML REQUIRED graphics)
+# target_include_directories(rodeostat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
+# target_link_libraries(rodeostat PUBLIC sfml-graphics)
+# include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Libraries/SFML/include)
 
 add_library(viewmodel ViewModel.cpp)
 target_include_directories(viewmodel PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
@@ -27,7 +27,7 @@ set_target_properties(noesisapp PROPERTIES
     IMPORTED_LOCATION           ${CMAKE_CURRENT_SOURCE_DIR}/Libraries/NoesisGui/Bin/macos/NoesisApp.dylib
 )
 
-target_link_libraries(viewmodel rodeostat)
+target_link_libraries(viewmodel rodeostat_lib)
 
 target_link_libraries(app_xaml noesisapp)
 target_link_libraries(app_xaml noesis)
@@ -51,8 +51,7 @@ target_link_libraries(mainwindow_xaml viewmodel)
 
 
 
-# include(${CMAKE_CURRENT_SOURCE_DIR}/AddIconToBinary.cmake)
-# AddIconToBinary(SOURCE_FILES ICONS ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.ico ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.icns)
+
 
 # Embedding XAML files into C style array headers
 include(bin2h.cmake)
@@ -83,14 +82,27 @@ bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources.xaml HEADER_FILE ${CMAKE
 # bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Themes/NoesisTheme.Colors.Dark.xaml HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/NoesisTheme.Colors.Dark.xaml.bin.h VARIABLE_NAME NoesisTheme_colors_dark_xaml REPLACE)
 # message("Embedding 'NoesisTheme.Brushes.DarkRed.xaml' into header file '/Resources/Bin/NoesisTheme.Brushes.DarkRed.xaml.bin.h")
 # bin2h(SOURCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Themes/NoesisTheme.Brushes.DarkRed.xaml HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin/NoesisTheme.Brushes.DarkRed.xaml.bin.h VARIABLE_NAME NoesisTheme_brushes_darkred_xaml REPLACE)
-# need to re-make when changes made to files
+# need to re-make when changes made to filess
 
 # main application code, links to library
-add_executable(main main.cpp)
-target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin)
-target_link_libraries(main PUBLIC rodeostat)
-target_link_libraries(main PRIVATE noesis)
-target_link_libraries(main PRIVATE noesisapp)
-target_link_libraries(main PRIVATE app_xaml)
-target_link_libraries(main PRIVATE viewmodel)
-target_link_libraries(main PRIVATE mainwindow_xaml)
+
+set(MACOSX_BUNDLE_ICON_FILE rs-sm.icns)
+set(MACOSX_BUNDLE_DOCK_ICON)
+set(RS_ICON ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Icons/rs-sm.icns)
+set_source_files_properties(${RS_ICON} PROPERTIES
+       MACOSX_PACKAGE_LOCATION "Resources")
+
+set(MACOSX_BUNDLE_Name "RodeoStat")
+
+
+add_executable(RodeoStat MACOSX_BUNDLE ${RS_ICON} main.cpp)
+target_include_directories(RodeoStat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Resources/Bin)
+target_link_libraries(RodeoStat PUBLIC rodeostat_lib)
+target_link_libraries(RodeoStat PRIVATE noesis)
+target_link_libraries(RodeoStat PRIVATE noesisapp)
+target_link_libraries(RodeoStat PRIVATE app_xaml)
+target_link_libraries(RodeoStat PRIVATE viewmodel)
+target_link_libraries(RodeoStat PRIVATE mainwindow_xaml)
+
+# include(${CMAKE_CURRENT_SOURCE_DIR}/AddIconToBinary.cmake)
+# AddIconToBinary(SOURCE_FILES ICONS ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.ico ${CMAKE_CURRENT_SOURCE_DIR}/Resources/icons/rs.icns)

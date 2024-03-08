@@ -11,6 +11,12 @@
     <Color x:Key="Color.Accent1">#FFEB452F</Color>
     <Color x:Key="Color.Accent2">#FFC2240C</Color>
     <Color x:Key="Color.Accent3">#FFA11F08</Color>
+    
+    <SolidColorBrush x:Key="Gray5" Color="{StaticResource Color.Gray5}" />
+    <SolidColorBrush x:Key="Gray6" Color="{StaticResource Color.Gray6}" />
+    <SolidColorBrush x:Key="Gray7" Color="{StaticResource Color.Gray7}" />
+    <SolidColorBrush x:Key="Gray8" Color="{StaticResource Color.Gray8}" />
+    <SolidColorBrush x:Key="Gray9" Color="{StaticResource Color.Gray9}" />
 
     <SolidColorBrush x:Key="Brush.Window.Background" Color="{StaticResource Color.White}" />
 

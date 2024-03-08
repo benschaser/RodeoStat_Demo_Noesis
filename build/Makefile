@@ -137,17 +137,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rodeostat
+# Target rules for targets named rodeostat_lib
 
 # Build rule for target.
-rodeostat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rodeostat
-.PHONY : rodeostat
+rodeostat_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rodeostat_lib
+.PHONY : rodeostat_lib
 
 # fast build rule for target.
-rodeostat/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat.dir/build.make src/CMakeFiles/rodeostat.dir/build
-.PHONY : rodeostat/fast
+rodeostat_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/rodeostat_lib.dir/build.make src/CMakeFiles/rodeostat_lib.dir/build
+.PHONY : rodeostat_lib/fast
 
 #=============================================================================
 # Target rules for targets named viewmodel
@@ -189,17 +189,17 @@ mainwindow_xaml/fast:
 .PHONY : mainwindow_xaml/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named RodeoStat
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+RodeoStat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RodeoStat
+.PHONY : RodeoStat
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+RodeoStat/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/RodeoStat.dir/build.make src/CMakeFiles/RodeoStat.dir/build
+.PHONY : RodeoStat/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -252,10 +252,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... RodeoStat"
 	@echo "... app_xaml"
-	@echo "... main"
 	@echo "... mainwindow_xaml"
-	@echo "... rodeostat"
+	@echo "... rodeostat_lib"
 	@echo "... tests"
 	@echo "... viewmodel"
 .PHONY : help
