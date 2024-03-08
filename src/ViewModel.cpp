@@ -59,13 +59,22 @@ ViewModel::ViewModel() {
     c->score = 12.3;
     contestants->Add(c);
 
+    Ptr<Contestant> m = *new Contestant();
+    m->fname = "Michael";
+    m->lname = "Sell";
+    m->name = "Michael Sell";
+    m->event = "Tie Down Roping";
+    m->time = 5.123;
+    m->score = 12.771;
+    contestants->Add(m);
+
     Ptr<Contestant> a = *new Contestant();
     a->fname = "Josh";
     a->lname = "Hennen";
     a->name = "Josh Hennen";
     a->event = "Barrel Racing";
     a->time = 9.211;
-    a->score = 4.35;
+    a->score = 4.352;
     contestants->Add(a);
 
     selected_contestant = contestants->Get(0);
