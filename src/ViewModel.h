@@ -10,6 +10,7 @@
 #include <NsGui/DynamicTextureSource.h>
 #include <NsGui/ComboBox.h>
 #include <NsRender/Texture.h>
+#include <NsGui/BitmapSource.h>
 #include <NsGui/Image.h>
 #include <vector>
 #include <string>
@@ -52,10 +53,11 @@ private:
     // RodeoStat rs;
     Graphics graphics{840, 472};
     // Control control;
-    struct Contestant;
+    struct RSContestant;
+    // struct RSFrame;
 
-    void SetSelectedContestant(Contestant* value);
-    Contestant* GetSelectedContestant() const;
+    void SetSelectedContestant(RSContestant* value);
+    RSContestant* GetSelectedContestant() const;
 
 
     const NoesisApp::DelegateCommand* GetOpenAddContestantPopupCommand() const;
@@ -65,19 +67,19 @@ private:
     const NoesisApp::DelegateCommand* GetAddContestantCommand() const;
     void AddContestant(BaseComponent* param);
 
-    Noesis::Ptr<Noesis::ObservableCollection<Contestant>> contestants;
-    Contestant* selected_contestant;
+    Noesis::Ptr<Noesis::ObservableCollection<RSContestant>> contestants;
+    RSContestant* selected_contestant;
     Noesis::String add_contestant_fname;
     Noesis::String add_contestant_lname;
     Noesis::String add_contestant_event_str;
-    Noesis::Ptr<Noesis::ImageSource> preview_image;
+    Noesis::Ptr<Noesis::BitmapSource> preview_image;
     int add_contestant_event_index;
     bool add_contestant_popup_open = false;
     int display_width = 840;
     int display_height = 472;
 
     // Noesis::DynamicTexture display_frame;
-    Noesis::Ptr<Noesis::DynamicTextureSource> display_frame;
+    // Noesis::Ptr<Noesis::DynamicTextureSource> display_frame;
     
 private:
     NoesisApp::DelegateCommand _OpenAddContestantPopupCommand;

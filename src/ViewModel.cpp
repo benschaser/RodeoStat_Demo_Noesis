@@ -21,21 +21,31 @@ using namespace RS;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-struct ViewModel::Contestant: BaseComponent {
+struct ViewModel::RSContestant: BaseComponent {
 public:
     String fname, lname, name, event;
     double time{0.0}, score{0.0};
 private:
-    NS_IMPLEMENT_INLINE_REFLECTION(Contestant, BaseComponent)
+    NS_IMPLEMENT_INLINE_REFLECTION(RSContestant, BaseComponent)
     {
-        NsProp("Fname", &Contestant::fname);
-        NsProp("Lname", &Contestant::lname);
-        NsProp("Name", &Contestant::name);
-        NsProp("Event", &Contestant::event);
-        NsProp("Time", &Contestant::time);
-        NsProp("Score", &Contestant::score);
+        NsProp("Fname", &RSContestant::fname);
+        NsProp("Lname", &RSContestant::lname);
+        NsProp("Name", &RSContestant::name);
+        NsProp("Event", &RSContestant::event);
+        NsProp("Time", &RSContestant::time);
+        NsProp("Score", &RSContestant::score);
     }
 };
+// struct ViewModel::RSFrame: FrameworkElement {
+// public:
+//     RSContestant contestant;
+//     // void Update() override;
+// private:
+//     NS_IMPLEMENT_INLINE_REFLECTION(RSContestant, BaseComponent)
+//     {
+//         NsProp("Contestant", &RSFrame::contestant);
+//     }
+// };
 
 
 ViewModel::ViewModel() {
@@ -43,14 +53,15 @@ ViewModel::ViewModel() {
     _CloseAddContestantPopupCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::CloseAddContestantPopup));
     _AddContestantCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::AddContestant));
 
-    contestants = *new ObservableCollection<Contestant>();
+    contestants = *new ObservableCollection<RSContestant>();
+    preview_image->Create(840, 472, 72, 72, graphics.frame_img.getPixelsPtr(), 840, BitmapSource::Format::Format_RGBA8);
     // display_frame = *new DynamicTextureSource(display_width, display_height);
     
     // const sf::Uint8* pixels = graphics.frame_img.getPixelsPtr();
     // const uint8_t pix = *pixels;
 
 
-    Ptr<Contestant> c = *new Contestant();
+    Ptr<RSContestant> c = *new RSContestant();
     c->fname = "Ben";
     c->lname = "Schaser";
     c->name = "Ben Schaser";
@@ -59,7 +70,7 @@ ViewModel::ViewModel() {
     c->score = 12.3;
     contestants->Add(c);
 
-    Ptr<Contestant> m = *new Contestant();
+    Ptr<RSContestant> m = *new RSContestant();
     m->fname = "Michael";
     m->lname = "Sell";
     m->name = "Michael Sell";
@@ -68,7 +79,7 @@ ViewModel::ViewModel() {
     m->score = 12.771;
     contestants->Add(m);
 
-    Ptr<Contestant> a = *new Contestant();
+    Ptr<RSContestant> a = *new RSContestant();
     a->fname = "Josh";
     a->lname = "Hennen";
     a->name = "Josh Hennen";
@@ -81,17 +92,18 @@ ViewModel::ViewModel() {
 
 }
 
-void ViewModel::SetSelectedContestant(Contestant* value) {
+void ViewModel::SetSelectedContestant(RSContestant* value) {
     if (selected_contestant != value)
     {
         selected_contestant = value;
         OnPropertyChanged("SelectedContestant");
 
         graphics.make_frame(value->name.Str(), value->event.Str(), value->score, value->time);
-        // graphics.make_frame("JH", "Barrel", 12.1, 39.9);
+        preview_image->Create(840, 472, 72, 72, graphics.frame_img.getPixelsPtr(), 840, BitmapSource::Format::Format_RGBA8);
+
     }
 }
-ViewModel::Contestant* ViewModel::GetSelectedContestant() const {
+ViewModel::RSContestant* ViewModel::GetSelectedContestant() const {
     return selected_contestant;
 }
 
@@ -113,7 +125,7 @@ const NoesisApp::DelegateCommand* ViewModel::GetAddContestantCommand() const {
     return &_AddContestantCommand;
 }
 void ViewModel::AddContestant(BaseComponent* param) {
-    Ptr<Contestant> c = *new Contestant();
+    Ptr<RSContestant> c = *new RSContestant();
     c->fname = add_contestant_fname;
     c->lname = add_contestant_lname;
     c->name = add_contestant_fname + " " + add_contestant_lname;
@@ -131,6 +143,7 @@ void ViewModel::AddContestant(BaseComponent* param) {
     OnPropertyChanged("AddContestantFName");
     OnPropertyChanged("AddContestantLName");
 }
+
 
 // Ptr<Noesis::Image> ConvertSfmlImageToNoesisImage(const sf::Image& sfmlImage) {
 //     // Get the size of the image

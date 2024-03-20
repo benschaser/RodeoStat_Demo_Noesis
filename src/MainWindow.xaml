@@ -10,12 +10,30 @@
         Title="RodeoStat"
         d:DesignWidth="1440" d:DesignHeight="900"
         Width="1440" Height="900">
+
     <Grid x:Name="MainGrid" Focusable="False">    
     <DockPanel LastChildFill="True">
         <Border BorderBrush="Gray" BorderThickness="0,0,0,1" Height="48" DockPanel.Dock="Top">
-            <StackPanel x:Name="CommandPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top">
+            <StackPanel x:Name="MenuPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top" Background="{StaticResource Gray9}">
                 <Image Source="Resources/Images/RS_logo.png" Height="48" Margin="8,0,8,0"/>
-                <Button Content="RodeoStat" Margin="8" Cursor="Hand"/>
+                <Menu Background="{StaticResource Gray9}" Width="580">
+                    <MenuItem Header="File" Cursor="Hand">
+                        <MenuItem Header="Save" Cursor="Hand"></MenuItem>
+                        <MenuItem Header="Open" Cursor="Hand"></MenuItem>
+                        <MenuItem Header="New" Cursor="Hand"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Project" Cursor="Hand">
+
+                    </MenuItem>
+                    <MenuItem Header="Settings" Cursor="Hand">
+                    
+                    </MenuItem>
+                </Menu>
+                <TabControl>
+                    <TabItem Header="Preview" Cursor="Hand"></TabItem>
+                    <TabItem Header="Stats" Cursor="Hand"></TabItem>
+                </TabControl>
+                <!-- <Button Content="RodeoStat" Margin="8" Cursor="Hand"/> -->
             </StackPanel>
         </Border>
         <StatusBar x:Name="StatusBar" VerticalAlignment="Center" DockPanel.Dock="Bottom" Height="24" Background="Black" Padding="0">
@@ -30,19 +48,46 @@
         </StatusBar>
         <Border BorderBrush="Gray" BorderThickness="0,0,1,0" DockPanel.Dock="Left">
             <StackPanel x:Name="OptionsPanel" Orientation="Vertical" Width="240" HorizontalAlignment="Left" DockPanel.Dock="Left">
-                <Label Content="Options Panel" FontSize="16" Margin="8" Foreground="Red" />
-                <Button Content="Button" Margin="8" Cursor="Hand"/>
+                <Label Content="Video Options" FontSize="16" Margin="8"/>
+                <ComboBox x:Name="VideoResolution" Width="200" Margin="8" Placeholder="Resolution" Cursor="Hand">
+                    <ComboBoxItem>SD [480p]</ComboBoxItem>
+                    <ComboBoxItem>HD [720p]</ComboBoxItem>
+                    <ComboBoxItem>Full HD [1080p]</ComboBoxItem>
+                    <ComboBoxItem>Quad HD [1440p]</ComboBoxItem>
+                    <ComboBoxItem>2K [2048p]</ComboBoxItem>
+                    <ComboBoxItem>4K [3840p]</ComboBoxItem>
+                    <ComboBoxItem>Custom Resolution</ComboBoxItem>
+                </ComboBox>
+                <StackPanel Orientation="Horizontal" Width="200" Visibility="Collapsed" x:Name="CustomVideoResolution">
+                    <TextBox Height="36" Placeholder="Width" Width="80"/>
+                    <TextBlock FontSize="12" Width="40" VerticalAlignment="Center" TextAlignment="Center" FontFamily="#Segoe MDL2 Assets" Foreground="White">&#xE10A;</TextBlock>
+                    <TextBox Height="36" Placeholder="Height" Width="80"/>
+                    <StackPanel.Style>
+                        <Style TargetType="{x:Type StackPanel}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding SelectedItem.Content, ElementName=VideoResolution}" Value="Custom Resolution">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                </StackPanel>
+                <ComboBox x:Name="VideoFramerate" Width="200" Margin="8" Placeholder="Framerate" Cursor="Hand">
+                    <ComboBoxItem>12 fps</ComboBoxItem>
+                    <ComboBoxItem>24 fps</ComboBoxItem>
+                    <ComboBoxItem>30 fps</ComboBoxItem>
+                    <ComboBoxItem>Custom Framerate</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
         </Border>
         <Border BorderBrush="Gray" BorderThickness="0,1,0,0" DockPanel.Dock="Bottom">
             <Grid x:Name="ControlPanel" DockPanel.Dock="Bottom" Height="240">
-                <Label Content="Control Board" FontSize="16" Margin="8" Foreground="Red" />
+                <Label Content="Control Board" FontSize="16" Margin="8" Foreground="Red"/>
             </Grid>
         </Border>
         <Border BorderBrush="Gray" BorderThickness="1,0,0,0" DockPanel.Dock="Right">
             <DockPanel x:Name="ContestantPanel" Width="360" LastChildFill="False">
-                
-                <ListView SelectedItem="{Binding SelectedContestant}" ItemsSource="{Binding Contestants}" DockPanel.Dock="Top">
+                <ListView SelectedItem="{Binding SelectedContestant}" ItemsSource="{Binding Contestants}" DockPanel.Dock="Top" Cursor="Hand">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name"/>
@@ -57,13 +102,11 @@
                     <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE70F;" Margin="8" Cursor="Hand" Width="48"/>
                     <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE74D;" Margin="8" Cursor="Hand" Width="48"/>
                 </WrapPanel>
-                
-                
             </DockPanel>
         </Border>
-        <Grid x:Name="Viewport" Background="{StaticResource Gray9}" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid x:Name="Viewport" Background="{StaticResource Gray10}" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid x:Name="DisplayPreviewContainer" Background="Black" Width="840" Height="472">
-                <!-- <Image Source="{Binding PreviewFrame, Mode=OnewWayToSource}"/> -->
+                <Image Source="{Binding PreviewFrame, Mode=OneWay}" Width="840"/>
             </Grid>
         </Grid>
     </DockPanel>

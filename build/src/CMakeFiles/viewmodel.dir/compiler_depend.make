@@ -357,6 +357,7 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Selector.inl \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsRender/Texture.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsRender/RenderDeviceApi.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h \
@@ -973,12 +974,9 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Log.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Popup.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureSource.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream
 
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureSource.h:
 
@@ -1730,10 +1728,6 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string_view:
-
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/SFML/include/SFML/Window/Keyboard.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/distance.h:
@@ -1904,6 +1898,10 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tuple:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string_view:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
+
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Boxing.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_for_each.h:
@@ -1917,6 +1915,18 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdlib:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/advance.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_const.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/iter_move.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/SFML/include/SFML/Graphics/Shape.hpp:
 
@@ -2310,14 +2320,6 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/iter_move.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_trivially_default_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_any_of.h:
@@ -2469,10 +2471,6 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/common_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_const.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
 
@@ -2629,6 +2627,10 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mode_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/duration.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/year.h:
 
@@ -2867,8 +2869,6 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h:
 

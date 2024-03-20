@@ -17,6 +17,7 @@
     <SolidColorBrush x:Key="Gray7" Color="{StaticResource Color.Gray7}" />
     <SolidColorBrush x:Key="Gray8" Color="{StaticResource Color.Gray8}" />
     <SolidColorBrush x:Key="Gray9" Color="{StaticResource Color.Gray9}" />
+    <SolidColorBrush x:Key="Gray10" Color="{StaticResource Color.Gray10}" />
 
     <SolidColorBrush x:Key="Brush.Window.Background" Color="{StaticResource Color.White}" />
 

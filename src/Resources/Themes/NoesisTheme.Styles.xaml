@@ -2241,7 +2241,7 @@
     <ControlTemplate.Triggers>
       <Trigger Property="TabStripPlacement" Value="Top">
         <Setter Property="Height" Value="Auto" TargetName="Row0"/>
-        <Setter Property="Height" Value="*" TargetName="Row1"/>
+        <Setter Property="Height" Value="0" TargetName="Row1"/>
         <Setter Property="Width" Value="*" TargetName="Col0"/>
         <Setter Property="Width" Value="0" TargetName="Col1"/>
         <Setter Property="Grid.Row" Value="0" TargetName="HeaderPanel"/>
@@ -2301,6 +2301,7 @@
     <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding Background}" Padding="{TemplateBinding Padding}">
       <ContentPresenter x:Name="ContentHost" ContentSource="Header" TextElement.FontSize="{DynamicResource Font.Size.Header}" TextElement.Foreground="{DynamicResource Brush.Glyph.Normal}"/>
     </Border>
+    
     <ControlTemplate.Triggers>
       <Trigger Property="IsMouseOver" Value="True">
         <Setter Property="Panel.ZIndex" Value="1"/>
@@ -2318,8 +2319,10 @@
       </Trigger>
       <DataTrigger Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Top">
         <Setter Property="CornerRadius" Value="{DynamicResource Corner.Border2.Top}" TargetName="Border"/>
-        <Setter Property="BorderThickness" Value="0,2,0,0" TargetName="Border"/>
-        <Setter Property="Margin" Value="0,-2,0,0" TargetName="ContentHost"/>
+        <!-- <Setter Property="BorderThickness" Value="0,2,0,0" TargetName="Border"/>
+        <Setter Property="Margin" Value="0,-2,0,0" TargetName="ContentHost"/> -->
+        <Setter Property="BorderThickness" Value="0,6,0,0" TargetName="Border"/>
+        <Setter Property="Margin" Value="0,0,0,0" TargetName="ContentHost"/>
       </DataTrigger>
       <DataTrigger Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="Bottom">
         <Setter Property="CornerRadius" Value="{DynamicResource Corner.Border2.Bottom}" TargetName="Border"/>

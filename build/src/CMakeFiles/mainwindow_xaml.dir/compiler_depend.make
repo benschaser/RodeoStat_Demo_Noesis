@@ -364,6 +364,7 @@ src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o: /Users/benschaser/Docu
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Selector.inl \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsRender/Texture.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsRender/RenderDeviceApi.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h \
@@ -1189,6 +1190,8 @@ src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o: /Users/benschaser/Docu
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwctype:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwchar:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/rank.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ios/fpos.h:
@@ -1826,8 +1829,6 @@ src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o: /Users/benschaser/Docu
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Atomic.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/remove.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwchar:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
 
@@ -2695,6 +2696,10 @@ src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o: /Users/benschaser/Docu
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/duration.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BitmapSource.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/year.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_set.h:
@@ -2864,8 +2869,6 @@ src/CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o: /Users/benschaser/Docu
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h:
 
