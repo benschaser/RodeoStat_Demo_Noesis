@@ -23,7 +23,7 @@ using namespace RS;
 
 struct ViewModel::RSContestant: BaseComponent {
 public:
-    String fname, lname, name, event;
+    String fname, lname, name, event, hometown, homestate, backtag, bucking_order, stock_name, stock_contractor;
     double time{0.0}, score{0.0};
 private:
     NS_IMPLEMENT_INLINE_REFLECTION(RSContestant, BaseComponent)
@@ -32,6 +32,13 @@ private:
         NsProp("Lname", &RSContestant::lname);
         NsProp("Name", &RSContestant::name);
         NsProp("Event", &RSContestant::event);
+        NsProp("Hometown", &RSContestant::hometown);
+        NsProp("Homestate", &RSContestant::homestate);
+        NsProp("Backtag", &RSContestant::backtag);
+        NsProp("BuckingOrder", &RSContestant::bucking_order);
+        NsProp("StockName", &RSContestant::stock_name);
+        NsProp("StockContractor", &RSContestant::stock_contractor);
+
         NsProp("Time", &RSContestant::time);
         NsProp("Score", &RSContestant::score);
     }

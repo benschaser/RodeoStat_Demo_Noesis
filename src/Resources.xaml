@@ -16,6 +16,8 @@
       </Border>
     </DataTemplate>
 
+    <SolidColorBrush x:Key="Gray3" Color="{StaticResource Color.Gray3}" />
+    <SolidColorBrush x:Key="Gray4" Color="{StaticResource Color.Gray4}" />
     <SolidColorBrush x:Key="Gray5" Color="{StaticResource Color.Gray5}" />
     <SolidColorBrush x:Key="Gray6" Color="{StaticResource Color.Gray6}" />
     <SolidColorBrush x:Key="Gray7" Color="{StaticResource Color.Gray7}" />
