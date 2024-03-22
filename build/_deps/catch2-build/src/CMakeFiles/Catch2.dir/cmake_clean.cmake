@@ -211,8 +211,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o.d"
   "CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o"
   "CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o.d"
-  "libCatch2.3.5.0.dylib"
-  "libCatch2.dylib"
+  "libCatch2.a"
   "libCatch2.pdb"
 )
 

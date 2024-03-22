@@ -11,7 +11,7 @@
         d:DesignWidth="1440" d:DesignHeight="900"
         Width="1440" Height="900">
 
-    <Grid x:Name="MainGrid" Focusable="False">    
+    <Grid x:Name="MainGrid" Focusable="False">
     <DockPanel LastChildFill="True">
         <Border BorderBrush="{StaticResource Gray3}" BorderThickness="0,0,0,1" Height="48" DockPanel.Dock="Top">
             <StackPanel x:Name="MenuPanel" Orientation="Horizontal" Height="48" VerticalAlignment="Center" DockPanel.Dock="Top" Background="{StaticResource Gray9}">
@@ -91,6 +91,20 @@
                         <ComboBoxItem>30 fps</ComboBoxItem>
                         <ComboBoxItem>Custom Framerate</ComboBoxItem>
                     </ComboBox>
+                    <StackPanel Orientation="Horizontal" Width="200" x:Name="CustomVideoFramerate">
+                        <TextBox Height="36" Placeholder="Framerate" Width="120"/>
+                        <Label Content="FPS" Margin="8"/>
+                        <StackPanel.Style>
+                            <Style TargetType="{x:Type StackPanel}">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding SelectedItem.Content, ElementName=VideoFramerate}" Value="Custom Framerate">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </StackPanel.Style>
+                    </StackPanel>
                 </StackPanel>
             </Border>
             <Border BorderBrush="{StaticResource Gray3}" BorderThickness="0,1,0,0" DockPanel.Dock="Bottom">
@@ -113,13 +127,13 @@
                     <WrapPanel Background="{StaticResource Gray9}" DockPanel.Dock="Bottom">
                         <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE710;" Margin="8" Cursor="Hand" Width="48" Command="{Binding OpenAddContestantPopupCommand}"/>
                         <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE70F;" Margin="8" Cursor="Hand" Width="48"/>
-                        <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE74D;" Margin="8" Cursor="Hand" Width="48"/>
+                        <Button FontFamily="#Segoe MDL2 Assets" Content="&#xE74D;" Margin="8" Cursor="Hand" Width="48" Command="{Binding RemoveContestantCommand}"/>
                     </WrapPanel>
                 </DockPanel>
             </Border>
             <Grid x:Name="Viewport" Background="{StaticResource Gray10}" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Grid x:Name="DisplayPreviewContainer" Background="Black" Width="840" Height="472">
-                    <Image Source="{Binding PreviewFrame, Mode=OneWay}" Width="840"/>
+                <Grid x:Name="DisplayPreviewContainer" Background="Blue" Width="840" Height="472">
+                    <Image Source="{Binding PreviewFrame}" Width="840"/>
                 </Grid>
             </Grid>
         </DockPanel>
@@ -143,13 +157,48 @@
                         <GridViewColumn DisplayMemberBinding="{Binding Event}" Header="Event"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Time}" Header="Time"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Score}" Header="Score"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Hometown}" Header="Hometown"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Homestate}" Header="Home State"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Backtag}" Header="Back Tag #"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding BuckingOrder}" Header="Bucking Order"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding StockName}" Header="Stock"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding StockContractor}" Header="Contractor"/>
                     </GridView>
                 </ListView.View>
             </ListView>
-            
         </Grid>
     </DockPanel>
+
+    <!-- Add Contestant Popup -->
     <Popup x:Name="AddContestantPopup" IsOpen="{Binding AddContestantPopupOpen}" PlacementTarget="{Binding ElementName=MainGrid}" Placement="Center" PopupAnimation="Slide" Focusable="True" StaysOpen="False">
+        <Border BorderBrush="{StaticResource Gray3}" BorderThickness="1" Background="{StaticResource Gray8}" Width="480" Height="240">
+            <StackPanel>
+                <ToolBar IsHoldingEnabled="False" Background="{StaticResource Gray9}">
+                    <Button FontFamily="#Segoe MDL2 Assets" Command="{Binding CloseAddContestantPopupCommand}" Cursor="Hand">&#xE10A;</Button>
+                </ToolBar>
+                <WrapPanel Orientation="Horizontal">
+                    <TextBox Width="200" Height="36" Placeholder="First Name" Margin="8" Text="{Binding AddContestantFName}"/>
+                    <TextBox Width="200" Height="36" Placeholder="Last Name" Margin="8" Text="{Binding AddContestantLName}"/>
+                    <ComboBox Width="200" Margin="8" Placeholder="Event" SelectedIndex="{Binding AddContestantEventIndex, Mode=TwoWay}">
+                        <ComboBoxItem>Bull Riding</ComboBoxItem>
+                        <ComboBoxItem>Bareback Riding</ComboBoxItem>
+                        <ComboBoxItem>Saddle Bronc Riding</ComboBoxItem>
+                        <ComboBoxItem>Steer Wrestling</ComboBoxItem>
+                        <ComboBoxItem>Barrel Racing</ComboBoxItem>
+                        <ComboBoxItem>Team Roping</ComboBoxItem>
+                        <ComboBoxItem>Tie Down Roping</ComboBoxItem>
+                        <ComboBoxItem>Breakaway Roping</ComboBoxItem>
+                    </ComboBox>
+                </WrapPanel>
+                <StackPanel Orientation="Horizontal" Width="480" HorizontalAlignment="Right">
+                    <Button Content="Add" Margin="8" HorizontalAlignment="Right" Cursor="Hand" Command="{Binding AddContestantCommand}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Popup>
+
+    <!-- Remove Contestant Popup -->
+    <Popup x:Name="RemoveContestantPopup" IsOpen="{Binding AddContestantPopupOpen}" PlacementTarget="{Binding ElementName=MainGrid}" Placement="Center" PopupAnimation="Slide" Focusable="True" StaysOpen="False">
         <Border BorderBrush="{StaticResource Gray3}" BorderThickness="1" Background="{StaticResource Gray8}" Width="480" Height="240">
             <StackPanel>
                 <ToolBar IsHoldingEnabled="False" Background="{StaticResource Gray9}">

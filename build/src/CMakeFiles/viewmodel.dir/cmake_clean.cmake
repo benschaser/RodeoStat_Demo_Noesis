@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/viewmodel.dir/ViewModel.cpp.o"
   "CMakeFiles/viewmodel.dir/ViewModel.cpp.o.d"
-  "libviewmodel.dylib"
+  "libviewmodel.a"
   "libviewmodel.pdb"
 )
 

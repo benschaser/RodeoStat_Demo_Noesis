@@ -974,9 +974,12 @@ src/CMakeFiles/viewmodel.dir/ViewModel.cpp.o: /Users/benschaser/Documents/Colleg
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Log.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Popup.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureSource.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureProvider.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream
 
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureProvider.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/TextureSource.h:
 

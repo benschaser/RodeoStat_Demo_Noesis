@@ -34,16 +34,7 @@ enum class Event {
     BreakawayRoping
 };
 
-std::vector<Noesis::String> events{
-    "Bull Riding",
-    "Bareback Riding",
-    "Saddle Bronc Riding",
-    "Steer Wrestling",
-    "Barrel Racing",
-    "Team Roping",
-    "Tie Down Roping",
-    "Breakaway Roping"
-};
+
 
 class ViewModel final: public NoesisApp::NotifyPropertyChangedBase
 {
@@ -66,17 +57,20 @@ private:
     void CloseAddContestantPopup(BaseComponent* param);
     const NoesisApp::DelegateCommand* GetAddContestantCommand() const;
     void AddContestant(BaseComponent* param);
+    const NoesisApp::DelegateCommand* GetRemoveContestantCommand() const;
+    void RemoveContestant(BaseComponent* param);
 
     Noesis::Ptr<Noesis::ObservableCollection<RSContestant>> contestants;
     RSContestant* selected_contestant;
     Noesis::String add_contestant_fname;
     Noesis::String add_contestant_lname;
     Noesis::String add_contestant_event_str;
-    Noesis::Ptr<Noesis::BitmapSource> preview_image;
+    Noesis::Ptr<Noesis::BitmapSource> preview_bitmap;
+    Noesis::Ptr<Noesis::ImageSource> preview_image;
     int add_contestant_event_index;
     bool add_contestant_popup_open = false;
-    int display_width = 840;
-    int display_height = 472;
+    int preview_width = 840;
+    int preview_height = 472;
 
     // Noesis::DynamicTexture display_frame;
     // Noesis::Ptr<Noesis::DynamicTextureSource> display_frame;
@@ -85,9 +79,12 @@ private:
     NoesisApp::DelegateCommand _OpenAddContestantPopupCommand;
     NoesisApp::DelegateCommand _CloseAddContestantPopupCommand;
     NoesisApp::DelegateCommand _AddContestantCommand;
+    NoesisApp::DelegateCommand _RemoveContestantCommand;
 
     NS_DECLARE_REFLECTION(ViewModel, NotifyPropertyChangedBase)
 };
 
+// NS_DECLARE_REFLECTION_ENUM(RS::Event)
 
 }
+NS_DECLARE_REFLECTION_ENUM(RS::Event)

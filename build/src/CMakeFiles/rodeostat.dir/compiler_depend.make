@@ -733,14 +733,15 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisPCH.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Type.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp/EntryPoint.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Noesis.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/BuildSettings.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/CompilerSettings.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/PlatformSettings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/TargetConditionals.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisPCH.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Type.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/KernelApi.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/BaseObject.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/ReflectionDeclare.h \
@@ -2258,6 +2259,10 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/RegisterComponent.h:
 
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/TypeEnumCreator.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/IdOf.h:
+
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/TypePropertyImpl.inl:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/TypeClassCreatorEmpty.inl:
@@ -2354,12 +2359,6 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/ReflectionDeclare.h:
 
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Grid.h:
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/FrameworkElement.h:
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Noesis.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/extent.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int32_t.h:
@@ -2367,6 +2366,12 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Type.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/Grid.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/FrameworkElement.h:
+
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Noesis.h:
 
 /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsGui/BulletDecorator.h:
 
@@ -3154,6 +3159,8 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
+/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp/EntryPoint.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string:
@@ -3669,10 +3676,6 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: /Users/benschaser/Documents/College_Wor
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/convertible_to.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/TypeEnumCreator.h:
-
-/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/IdOf.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/types.h:
 

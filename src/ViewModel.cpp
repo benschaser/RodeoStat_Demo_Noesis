@@ -10,6 +10,7 @@
 #include <NsGui/Popup.h>
 #include <NsGui/ComboBox.h>
 #include <NsGui/TextureSource.h>
+#include <NsGui/TextureProvider.h>
 #include <iostream>
 
 
@@ -18,6 +19,17 @@
 
 using namespace Noesis;
 using namespace RS;
+
+std::vector<Noesis::String> events{
+    "Bull Riding",
+    "Bareback Riding",
+    "Saddle Bronc Riding",
+    "Steer Wrestling",
+    "Barrel Racing",
+    "Team Roping",
+    "Tie Down Roping",
+    "Breakaway Roping"
+};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -59,14 +71,12 @@ ViewModel::ViewModel() {
     _OpenAddContestantPopupCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::OpenAddContestantPopup));
     _CloseAddContestantPopupCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::CloseAddContestantPopup));
     _AddContestantCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::AddContestant));
+    _RemoveContestantCommand.SetExecuteFunc(MakeDelegate(this, &ViewModel::RemoveContestant));
 
     contestants = *new ObservableCollection<RSContestant>();
-    preview_image->Create(840, 472, 72, 72, graphics.frame_img.getPixelsPtr(), 840, BitmapSource::Format::Format_RGBA8);
-    // display_frame = *new DynamicTextureSource(display_width, display_height);
-    
-    // const sf::Uint8* pixels = graphics.frame_img.getPixelsPtr();
-    // const uint8_t pix = *pixels;
-
+    // Ptr<BitmapSource> prev;
+    // auto prev = preview_bitmap->Create(preview_width, preview_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), preview_width*4, BitmapSource::Format::Format_RGBA8);    
+    // std::cout << prev->GetPixelWidth() << '\n';
 
     Ptr<RSContestant> c = *new RSContestant();
     c->fname = "Ben";
@@ -96,18 +106,19 @@ ViewModel::ViewModel() {
     contestants->Add(a);
 
     selected_contestant = contestants->Get(0);
+    graphics.make_frame(selected_contestant->name.Str(), selected_contestant->event.Str(), selected_contestant->score, selected_contestant->time);
+    preview_bitmap = preview_bitmap->Create(preview_width, preview_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), preview_width*4, BitmapSource::Format::Format_RGBA8);
 
 }
 
 void ViewModel::SetSelectedContestant(RSContestant* value) {
-    if (selected_contestant != value)
-    {
+    if (selected_contestant != value) {
         selected_contestant = value;
         OnPropertyChanged("SelectedContestant");
 
         graphics.make_frame(value->name.Str(), value->event.Str(), value->score, value->time);
-        preview_image->Create(840, 472, 72, 72, graphics.frame_img.getPixelsPtr(), 840, BitmapSource::Format::Format_RGBA8);
-
+        preview_bitmap = preview_bitmap->Create(preview_width, preview_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), preview_width*4, BitmapSource::Format::Format_RGBA8);
+        OnPropertyChanged("PreviewFrame");
     }
 }
 ViewModel::RSContestant* ViewModel::GetSelectedContestant() const {
@@ -151,40 +162,31 @@ void ViewModel::AddContestant(BaseComponent* param) {
     OnPropertyChanged("AddContestantLName");
 }
 
+const NoesisApp::DelegateCommand* ViewModel::GetRemoveContestantCommand() const {
+    return &_RemoveContestantCommand;
+}
+void ViewModel::RemoveContestant(BaseComponent* param) {
+    int i = contestants->IndexOf(selected_contestant);
+    int s = contestants->Count();
+    if (s > 1) {
+        int n = (i + 1) % s;
+        selected_contestant = contestants->Get(n);
+    }
+    else {
+        selected_contestant = nullptr;
+    }
+    OnPropertyChanged("SelectedContestant");
+    contestants->RemoveAt(i);
 
-// Ptr<Noesis::Image> ConvertSfmlImageToNoesisImage(const sf::Image& sfmlImage) {
-//     // Get the size of the image
-//     sf::Vector2u size = sfmlImage.getSize();
-//     unsigned int width = size.x;
-//     unsigned int height = size.y;
-
-//     // Get the pixel data from the SFML image
-//     const sf::Uint8* pixels = sfmlImage.getPixelsPtr();
-//     const uint8_t* pix = pixels;
-//     // ConvertUInt8ArrayToInt32Array(pixels, pixels2, width*height);
-
-//     // Create a texture source
-//     Noesis::TextureSource texture;
-//     texture.Create(width, height, 72, 72, *pix, 8, BitmapSource.Format.RGBA8);
-//     Ptr<Noesis::TextureSource> textureSource = *new Noesis::TextureSource();
-
-//     // Update the texture data
-//     // static_cast<Noesis::TextureSource*>(textureSource.GetPtr())->UpdateTextureData(pixels);
-
-//     // Create a Noesis image
-//     Ptr<Noesis::Image> image = *new Noesis::Image();
-//     image->SetSource(textureSource);
-
-//     return image;
-// }
-
-
+    OnPropertyChanged("Contestants");
+}
 
 NS_BEGIN_COLD_REGION
 
 NS_IMPLEMENT_REFLECTION(ViewModel) {
     NsProp("Contestants", &ViewModel::contestants);
     NsProp("SelectedContestant", &ViewModel::GetSelectedContestant, &ViewModel::SetSelectedContestant);
+
     NsProp("AddContestantPopupOpen", &ViewModel::add_contestant_popup_open);
     NsProp("OpenAddContestantPopupCommand", &ViewModel::GetOpenAddContestantPopupCommand);
     NsProp("CloseAddContestantPopupCommand", &ViewModel::GetCloseAddContestantPopupCommand);
@@ -192,19 +194,22 @@ NS_IMPLEMENT_REFLECTION(ViewModel) {
     NsProp("AddContestantFName", &ViewModel::add_contestant_fname);
     NsProp("AddContestantLName", &ViewModel::add_contestant_lname);
     NsProp("AddContestantEventIndex", &ViewModel::add_contestant_event_index);
-    NsProp("PreviewFrame", &ViewModel::preview_image);
+
+    NsProp("RemoveContestantCommand", &ViewModel::GetRemoveContestantCommand);
+
+    NsProp("PreviewFrame", &ViewModel::preview_bitmap);
 }
 
 NS_END_COLD_REGION
 
-// NS_IMPLEMENT_REFLECTION_ENUM(Event)
-// {
-//     NsVal("BullRiding", Event::BullRiding);
-//     NsVal("BarebackRiding", Event::BarebackRiding);
-//     NsVal("SaddleBroncRiding", Event::SaddleBroncRiding);
-//     NsVal("SteerWrestling", Event::SteerWrestling);
-//     NsVal("BarrelRacing", Event::BarrelRacing);
-//     NsVal("TeamRoping", Event::TeamRoping);
-//     NsVal("TieDownRoping", Event::TieDownRoping);
-//     NsVal("BreakawayRoping", Event::BreakawayRoping);
-// }
+NS_IMPLEMENT_REFLECTION_ENUM(Event)
+{
+    NsVal("Bull Riding", Event::BullRiding);
+    NsVal("Bareback Riding", Event::BarebackRiding);
+    NsVal("Saddle Bronc Riding", Event::SaddleBroncRiding);
+    NsVal("Steer Wrestling", Event::SteerWrestling);
+    NsVal("Barrel Racing", Event::BarrelRacing);
+    NsVal("Team Roping", Event::TeamRoping);
+    NsVal("Tie Down Roping", Event::TieDownRoping);
+    NsVal("Breakaway Roping", Event::BreakawayRoping);
+}

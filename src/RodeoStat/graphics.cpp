@@ -20,6 +20,11 @@ void Graphics::make_frame(std::string name, std::string event, double score, dou
     sf::Font font;
     font.loadFromMemory(NOTOSANS_REGULAR_TTF, NOTOSANS_REGULAR_TTF_SIZE);
 
+    rt.clear(sf::Color::Transparent);
+    // sf::RectangleShape rect{{840, 472}};
+    // rect.setFillColor(sf::Color::Green);
+    // rect.setPosition(0, 0);
+
     sf::Text name_text(name, font, 24);
     name_text.setFillColor(sf::Color::White);
     name_text.setStyle(sf::Text::Bold);

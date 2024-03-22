@@ -92,9 +92,9 @@ tests_EXTERNAL_OBJECTS =
 
 test/tests: test/CMakeFiles/tests.dir/test.cpp.o
 test/tests: test/CMakeFiles/tests.dir/build.make
-test/tests: _deps/catch2-build/src/libCatch2Main.3.5.0.dylib
-test/tests: src/librodeostat_lib.dylib
-test/tests: _deps/catch2-build/src/libCatch2.3.5.0.dylib
+test/tests: _deps/catch2-build/src/libCatch2Main.a
+test/tests: src/librodeostat_lib.a
+test/tests: _deps/catch2-build/src/libCatch2.a
 test/tests: /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib
 test/tests: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
 test/tests: /opt/homebrew/lib/libsfml-system.2.6.1.dylib

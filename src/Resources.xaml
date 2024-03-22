@@ -46,4 +46,12 @@
       <Setter Property="FontSize" Value="12"/>
       <Setter Property="FontFamily" Value="#Segoe MDL2 Assets"/>
     </Style>
+
+    <!-- <AlternationConverter x:Key="RowBackgroundConverter">
+      <SolidColorBrush Color="#106090B0"/>
+      <SolidColorBrush Color="#306090B0"/>
+    </AlternationConverter>
+    <Style x:Key="ListViewAlternateRowColor" TargetType="ListViewItem" BasedOn="{StaticResource {x:Type ListViewItem}}">
+      <Setter Property="Background" Value="{Binding (ItemsControl.AlternationIndex), RelativeSource={RelativeSource Self}, Converter={StaticResource RowBackgroundConverter}}"/>
+    </Style> -->
 </ResourceDictionary>

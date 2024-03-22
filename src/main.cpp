@@ -2,6 +2,7 @@
 // Created by Ben Schaser - 2024
 
 #include <iostream>
+#include <NsApp/EntryPoint.h>
 #include <NoesisLicense.h>
 #include <NoesisPCH.h>
 
@@ -58,7 +59,7 @@ private:
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-int main(int argc, char **argv) {
+int NsMain(int argc, char **argv) {
     AppLauncher launcher;
     launcher.SetArguments(argc, argv);
     launcher.SetApplicationFile("App.xaml");

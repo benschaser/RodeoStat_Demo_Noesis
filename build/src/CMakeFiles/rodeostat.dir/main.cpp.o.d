@@ -731,14 +731,15 @@ src/CMakeFiles/RodeoStat.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisPCH.h \
-  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Type.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsApp/EntryPoint.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Noesis.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/BuildSettings.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/CompilerSettings.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/PlatformSettings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/TargetConditionals.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisLicense.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NoesisPCH.h \
+  /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/Type.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/KernelApi.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/BaseObject.h \
   /Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/src/Libraries/NoesisGui/Include/NsCore/ReflectionDeclare.h \

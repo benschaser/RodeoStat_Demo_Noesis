@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o"
   "CMakeFiles/mainwindow_xaml.dir/MainWindow.xaml.cpp.o.d"
-  "libmainwindow_xaml.dylib"
+  "libmainwindow_xaml.a"
   "libmainwindow_xaml.pdb"
 )
 

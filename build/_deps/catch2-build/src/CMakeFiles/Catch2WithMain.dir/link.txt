@@ -1,1 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -dynamiclib -Wl,-headerpad_max_install_names -compatibility_version 3.5.0 -current_version 3.5.0 -o libCatch2Main.3.5.0.dylib -install_name @rpath/libCatch2Main.3.5.0.dylib CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o  -Wl,-rpath,/Users/benschaser/Documents/College_Work/Senior_24/Semester_2/CS-Capstone/RodeoStat_Demo_Noesis/build/_deps/catch2-build/src libCatch2.3.5.0.dylib 
+/Library/Developer/CommandLineTools/usr/bin/ar qc libCatch2Main.a CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libCatch2Main.a
