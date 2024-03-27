@@ -42,7 +42,7 @@ public:
     ViewModel();
 private:
     // RodeoStat rs;
-    Graphics graphics{840, 472};
+    Graphics graphics{1920, 1080};
     // Control control;
     struct RSContestant;
     // struct RSFrame;
@@ -69,8 +69,8 @@ private:
     Noesis::Ptr<Noesis::ImageSource> preview_image;
     int add_contestant_event_index;
     bool add_contestant_popup_open = false;
-    int preview_width = 840;
-    int preview_height = 472;
+    int video_width = 1920;
+    int video_height = 1080;
 
     // Noesis::DynamicTexture display_frame;
     // Noesis::Ptr<Noesis::DynamicTextureSource> display_frame;

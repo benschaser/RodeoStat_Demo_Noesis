@@ -61,7 +61,7 @@
             <Border BorderBrush="{StaticResource Gray3}" BorderThickness="0,0,1,0" DockPanel.Dock="Left">
                 <StackPanel x:Name="OptionsPanel" Orientation="Vertical" Width="240" HorizontalAlignment="Left" DockPanel.Dock="Left">
                     <Label Content="Video Options" FontSize="16" Margin="8"/>
-                    <ComboBox x:Name="VideoResolution" Width="200" Margin="8" Placeholder="Resolution" Cursor="Hand">
+                    <ComboBox x:Name="VideoResolution" Width="200" Margin="8" Placeholder="Resolution" Cursor="Hand" SelectedIndex="2">
                         <ComboBoxItem>SD [480p]</ComboBoxItem>
                         <ComboBoxItem>HD [720p]</ComboBoxItem>
                         <ComboBoxItem>Full HD [1080p]</ComboBoxItem>
@@ -85,7 +85,7 @@
                             </Style>
                         </StackPanel.Style>
                     </StackPanel>
-                    <ComboBox x:Name="VideoFramerate" Width="200" Margin="8" Placeholder="Framerate" Cursor="Hand">
+                    <ComboBox x:Name="VideoFramerate" Width="200" Margin="8" Placeholder="Framerate" Cursor="Hand" SelectedIndex="1">
                         <ComboBoxItem>12 fps</ComboBoxItem>
                         <ComboBoxItem>24 fps</ComboBoxItem>
                         <ComboBoxItem>30 fps</ComboBoxItem>
@@ -132,7 +132,7 @@
                 </DockPanel>
             </Border>
             <Grid x:Name="Viewport" Background="{StaticResource Gray10}" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Grid x:Name="DisplayPreviewContainer" Background="Blue" Width="840" Height="472">
+                <Grid x:Name="DisplayPreviewContainer" Background="Transparent" Width="840">
                     <Image Source="{Binding PreviewFrame}" Width="840"/>
                 </Grid>
             </Grid>

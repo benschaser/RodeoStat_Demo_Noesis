@@ -107,7 +107,7 @@ ViewModel::ViewModel() {
 
     selected_contestant = contestants->Get(0);
     graphics.make_frame(selected_contestant->name.Str(), selected_contestant->event.Str(), selected_contestant->score, selected_contestant->time);
-    preview_bitmap = preview_bitmap->Create(preview_width, preview_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), preview_width*4, BitmapSource::Format::Format_RGBA8);
+    preview_bitmap = preview_bitmap->Create(video_width, video_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), video_width*4, BitmapSource::Format::Format_RGBA8);
 
 }
 
@@ -117,7 +117,7 @@ void ViewModel::SetSelectedContestant(RSContestant* value) {
         OnPropertyChanged("SelectedContestant");
 
         graphics.make_frame(value->name.Str(), value->event.Str(), value->score, value->time);
-        preview_bitmap = preview_bitmap->Create(preview_width, preview_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), preview_width*4, BitmapSource::Format::Format_RGBA8);
+        preview_bitmap = preview_bitmap->Create(video_width, video_height, 1.0f, 1.0f, graphics.frame_img.getPixelsPtr(), video_width*4, BitmapSource::Format::Format_RGBA8);
         OnPropertyChanged("PreviewFrame");
     }
 }
